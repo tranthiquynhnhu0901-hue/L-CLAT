@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO CHUẨN TÍCH XANH: TITLE (< 60 CHARS) & META DESCRIPTION (< 120 CHARS) -->
+    <title id="seo-title-tag">L'ÉCLAT | Tạp Chí Trang Sức Nữ & Phối Đồ Thời Trang</title>
+    <meta name="description" id="seo-meta-desc" content="Khám phá L'ÉCLAT: Cẩm nang trang sức nữ, dây chuyền đẹp, cách phối đồ tôn dáng và xu hướng Quiet Luxury mới nhất.">
+    <meta name="keywords" content="trang sức nữ, dây chuyền nữ, cách phối đồ, thời trang công sở, quiet luxury, ATD Stellar, haute joaillerie">
+    <meta name="robots" content="index, follow">
+    
+    <!-- CANONICAL URL HỢP LỆ TỰ ĐỘNG ĐỒNG BỘ GITHUB PAGES -->
+    <link rel="canonical" id="seo-canonical" href="https://leclat-magazine.github.io/">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" id="og-title" content="L'ÉCLAT | Tạp Chí Trang Sức Nữ & Phối Đồ Thời Trang">
+    <meta property="og:description" id="og-desc" content="Khám phá L'ÉCLAT: Cẩm nang trang sức nữ, dây chuyền đẹp, cách phối đồ tôn dáng và xu hướng Quiet Luxury mới nhất.">
+    <meta property="og:url" id="og-url" content="https://leclat-magazine.github.io/">
+
+    <!-- SCHEMA.ORG MARKUP: 3 TYPES (Organization, WebSite, WebPage) CHUẨN TÍCH XANH -->
+    <script type="application/ld+json" id="schema-org-graph">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://leclat-magazine.github.io/#organization",
+          "name": "L'ÉCLAT — Haute Joaillerie & Haute Couture",
+          "url": "https://leclat-magazine.github.io/",
+          "sameAs": [
+            "https://edu-atd-stellar.odoo.com/",
+            "https://edu-atd-stellar.odoo.com/shop"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://leclat-magazine.github.io/#website",
+          "url": "https://leclat-magazine.github.io/",
+          "name": "L'ÉCLAT Magazine",
+          "publisher": { "@id": "https://leclat-magazine.github.io/#organization" },
+          "inLanguage": ["vi-VN", "en-US"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://leclat-magazine.github.io/#webpage",
+          "url": "https://leclat-magazine.github.io/",
+          "name": "L'ÉCLAT | Tạp Chí Trang Sức Nữ & Phối Đồ Thời Trang",
+          "isPartOf": { "@id": "https://leclat-magazine.github.io/#website" },
+          "description": "Khám phá L'ÉCLAT: Cẩm nang trang sức nữ, dây chuyền đẹp, cách phối đồ tôn dáng và xu hướng Quiet Luxury mới nhất."
+        }
+      ]
+    }
+    </script>
+
+    <!-- BỘ FONT MỚI TỐI ƯU HOÀN HẢO CHO TIẾNG VIỆT & TIẾNG ANH THƯỢNG LƯU: LORA & BE VIETNAM PRO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAF7F2',
+                        pearl: '#F2ECE1',
+                        alabaster: '#FFFFFF',
+                        obsidian: '#0C0C0E',
+                        charcoal: '#16161A',
+                        gold: {
+                            DEFAULT: '#B89146',
+                            light: '#D4AF37',
+                            dark: '#8C6B28',
+                            soft: '#E6D5B8'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Lora"', 'Georgia', 'serif'],
+                        editorial: ['"Lora"', 'Georgia', 'serif'],
+                        sans: ['"Be Vietnam Pro"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #FAF7F2;
+            --bg-secondary: #F2ECE1;
+            --bg-card: #FFFFFF;
+            --text-primary: #181816;
+            --text-secondary: #57534E;
+            --accent-gold: #9A7432;
+            --border-subtle: rgba(184, 145, 70, 0.24);
+        }
+        html.dark {
+            --bg-primary: #0C0C0E;
+            --bg-secondary: #141418;
+            --bg-card: #18181D;
+            --text-primary: #F5F2EB;
+            --text-secondary: #A6A29A;
+            --accent-gold: #D4AF37;
+            --border-subtle: rgba(212, 175, 55, 0.22);
+        }
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            letter-spacing: -0.005em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            transition: background-color 0.35s ease, color 0.35s ease;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Lora', Georgia, serif;
+            letter-spacing: -0.01em;
+            line-height: 1.35;
+        }
+        .luxury-border { border-color: var(--border-subtle); }
+        .luxury-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .luxury-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(154, 116, 50, 0.16);
+            border-color: var(--accent-gold);
+        }
+        .img-zoom-container { overflow: hidden; }
+        .img-zoom-container img {
+            transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .luxury-card:hover .img-zoom-container img {
+            transform: scale(1.05);
+        }
+        .drop-cap::first-letter {
+            font-family: 'Lora', Georgia, serif;
+            float: left;
+            font-size: 3.75rem;
+            line-height: 0.85;
+            padding-top: 4px;
+            padding-right: 14px;
+            padding-bottom: 4px;
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+        .reader-prose p {
+            margin-bottom: 1.3rem;
+            line-height: 1.9;
+            font-weight: 400;
+        }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: #B89146; border-radius: 3px; }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-white">
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-[#FAF7F2]/95 dark:bg-[#0C0C0E]/95 border-b luxury-border transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 gap-4">
+                
+                <!-- Left: Instant Search -->
+                <div class="flex items-center gap-3 flex-1">
+                    <div class="relative w-full max-w-xs">
+                        <input 
+                            type="text" 
+                            id="searchInput"
+                            oninput="handleSearch(this.value)"
+                            placeholder="Tìm trang sức, phối đồ, lụa..." 
+                            class="w-full pl-9 pr-8 py-2 text-sm rounded-full bg-pearl/70 dark:bg-charcoal border luxury-border focus:outline-none focus:border-gold transition-all"
+                        >
+                        <svg class="w-4 h-4 text-gold absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-xs text-stone-400 hover:text-gold">✕</button>
+                    </div>
+                </div>
+
+                <!-- Center: Brand Logo -->
+                <div class="text-center flex-shrink-0">
+                    <a href="#top" onclick="resetToHome(event)" class="group inline-block">
+                        <span class="font-serif text-3xl sm:text-4xl font-bold tracking-[0.22em] block group-hover:text-gold transition-colors">L'ÉCLAT</span>
+                    </a>
+                </div>
+
+                <!-- Right: Theme, Language, Vault, Concierge -->
+                <div class="flex items-center justify-end gap-2.5 sm:gap-3 flex-1">
+                    <!-- Theme Toggle -->
+                    <button onclick="toggleTheme()" id="themeToggleBtn" class="p-2.5 rounded-full border luxury-border hover:border-gold transition-colors" title="Đổi giao diện Sáng / Tối">
+                        <svg id="sunIcon" class="w-4 h-4 text-amber-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        <svg id="moonIcon" class="w-4 h-4 text-stone-700 dark:text-stone-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Language Switcher VI / EN -->
+                    <div class="flex items-center rounded-full p-0.5 bg-pearl dark:bg-charcoal border luxury-border text-xs font-semibold">
+                        <button id="langViBtn" onclick="setLanguage('vi')" class="px-2.5 py-1 rounded-full bg-gold text-white transition-all">VI</button>
+                        <button id="langEnBtn" onclick="setLanguage('en')" class="px-2.5 py-1 rounded-full text-stone-600 dark:text-stone-400 hover:text-gold transition-all">EN</button>
+                    </div>
+
+                    <!-- Saved Vault Drawer Button -->
+                    <button onclick="toggleWishlistModal()" class="relative p-2.5 rounded-full border luxury-border hover:border-gold transition-colors" title="Tủ Lưu Trữ Cá Nhân">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                        </svg>
+                        <span id="wishlistBadge" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-gold text-white text-[10px] font-bold flex items-center justify-center">0</span>
+                    </button>
+
+                    <!-- Private Concierge Button -->
+                    <button onclick="openConciergeModal()" class="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-stone-900 dark:bg-gold text-white dark:text-stone-950 text-xs uppercase tracking-wider font-semibold hover:opacity-90 transition-all">
+                        <span data-i18n="btnConcierge">Đặt Lịch Tư Vấn</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="top" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        <!-- DUY NHẤT 1 THẺ H1 TRÊN TRANG CHỦ ĐỂ ĐẠT CHUẨN SEO TÍCH XANH (H1 = 1) -->
+        <div class="mb-8 pb-5 border-b luxury-border flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-gold font-semibold mb-1.5" data-i18n="seoHeroKicker">ẤN PHẨM SONG NGỮ THƯỢNG LƯU • HAUTE JOAILLERIE & HAUTE COUTURE</p>
+                <h1 id="main-page-h1" class="font-serif text-2xl sm:text-4xl font-bold tracking-tight" data-i18n="mainH1Title">
+                    L'ÉCLAT — Tạp Chí Trang Sức Độc Bản & Thời Trang Thượng Lưu
+                </h1>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 max-w-md" data-i18n="mainH1Sub">
+                Chuẩn mực biên tập chuyên sâu kết hợp nghệ thuật chế tác kim hoàn, bí quyết phối đồ tôn dáng và hệ sinh thái trang sức tinh tuyển.
+            </p>
+        </div>
+
+        <!-- HERO FEATURED EDITORIAL (ĐỐI XỨNG 50/50 CÂN ĐỐI) -->
+        <section id="heroSection" class="mb-14">
+            <!-- Injected via JS -->
+        </section>
+
+        <!-- FILTER, SORT & ARTICLES GRID SECTION (H2 #1) -->
+        <section id="editorialGridSection" class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b luxury-border gap-4">
+                <div>
+                    <span class="text-xs uppercase tracking-[0.18em] text-gold font-semibold block mb-1" data-i18n="sectionSub1">TUYỂN TẬP BIÊN TẬP CHUYÊN SÂU</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold" id="currentCategoryTitle" data-i18n="sectionTitle1">Tất Cả Tuyệt Tác Trang Sức & Trang Phục</h2>
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <!-- Category Select Dropdown -->
+                    <div class="flex items-center gap-2">
+                        <label for="categorySelect" class="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 font-semibold" data-i18n="filterLabel">Chuyên mục:</label>
+                        <select id="categorySelect" onchange="selectCategory(this.value)" class="text-xs sm:text-sm bg-pearl dark:bg-charcoal border luxury-border rounded-lg px-3 py-2 font-medium focus:outline-none focus:border-gold cursor-pointer">
+                            <option value="all" id="catOptAll">Tất cả bài viết (26)</option>
+                            <option value="jewelry" id="catOptJewelry">Trang Sức Độc Bản (19)</option>
+                            <option value="couture" id="catOptCouture">Trang Phục Thượng Lưu (7)</option>
+                            <option value="new8" id="catOptNew8">Mới Tuyển Chọn (8)</option>
+                        </select>
+                    </div>
+
+                    <!-- Sort Select -->
+                    <div class="flex items-center gap-2">
+                        <label for="sortSelect" class="text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 font-semibold" data-i18n="sortLabel">Sắp xếp:</label>
+                        <select id="sortSelect" onchange="handleSort(this.value)" class="text-xs sm:text-sm bg-pearl dark:bg-charcoal border luxury-border rounded-lg px-3 py-2 font-medium focus:outline-none focus:border-gold cursor-pointer">
+                            <option value="newest" data-i18n="sortNewest">Mới nhất & Nổi bật</option>
+                            <option value="priceDesc" data-i18n="sortPrice">Định giá: Cao đến Thấp</option>
+                            <option value="hoursDesc" data-i18n="sortHours">Giờ chế tác thủ công</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div id="articlesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- INTERACTIVE LOOKBOOK PAIRING (H2 #2) -->
+        <section id="lookbookSection" class="mb-16 rounded-2xl bg-pearl/70 dark:bg-charcoal/90 border luxury-border p-6 sm:p-10">
+            <div class="max-w-3xl mb-8">
+                <span class="text-xs uppercase tracking-[0.18em] text-gold font-semibold block mb-1" data-i18n="pairingSub">NGHỆ THUẬT MIX & MATCH THƯỢNG LƯU</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-2" data-i18n="pairingTitle">Phối Hợp Trang Sức & Trang Phục Dạ Tiệc</h2>
+                <p class="text-sm text-stone-600 dark:text-stone-300" data-i18n="pairingDesc">
+                    Khám phá quy tắc kết hợp tỷ lệ cổ áo, chất liệu vải và ánh sắc đá quý hoàn hảo cho từng sự kiện thảm đỏ hay dạ tiệc tối.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5 mb-8" id="pairingTabs"></div>
+            <div id="pairingDisplay" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t luxury-border bg-pearl/50 dark:bg-charcoal/50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <a href="#top" onclick="resetToHome(event)" class="font-serif text-2xl font-bold tracking-[0.2em]">L'ÉCLAT</a>
+                <p class="text-xs text-stone-500 mt-1" data-i18n="footerCopy">© 2026 L'ÉCLAT Magazine. Ấn phẩm Trang sức & Thời trang Thượng lưu.</p>
+            </div>
+            <div class="flex flex-wrap gap-5 text-xs font-medium text-stone-600 dark:text-stone-400">
+                <a href="#editorialGridSection" onclick="selectCategory('all')" class="hover:text-gold">Tất cả bài viết (26)</a>
+                <a href="#editorialGridSection" onclick="selectCategory('jewelry')" class="hover:text-gold">Haute Joaillerie (19)</a>
+                <a href="#editorialGridSection" onclick="selectCategory('couture')" class="hover:text-gold">Haute Couture (7)</a>
+                <a href="#lookbookSection" class="hover:text-gold">Lookbook Phối Đồ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BACK TO TOP BUTTON -->
+    <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 left-6 z-40 hidden p-3 rounded-full bg-stone-900/90 dark:bg-gold text-white dark:text-stone-950 shadow-lg hover:scale-105 transition-all" title="Lên đầu trang">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 15l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- ARTICLE IMMERSIVE READER MODAL -->
+    <div id="articleModal" onclick="handleModalBackdropClick(event)" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/75 backdrop-blur-sm">
+        <div class="fixed top-0 left-0 right-0 h-1 bg-stone-800 z-50">
+            <div id="readingProgressBar" class="h-full bg-gold transition-all duration-150" style="width: 0%"></div>
+        </div>
+
+        <div class="min-h-screen px-2 sm:px-6 py-6 flex items-start justify-center">
+            <div id="articleModalContainer" class="relative w-full max-w-4xl rounded-2xl bg-ivory dark:bg-obsidian border luxury-border shadow-2xl overflow-hidden my-4">
+                
+                <!-- Modal Sticky Top Bar -->
+                <div class="sticky top-0 z-30 flex items-center justify-between px-4 sm:px-8 py-3.5 bg-ivory/95 dark:bg-obsidian/95 backdrop-blur border-b luxury-border gap-2">
+                    <div class="flex items-center gap-2.5 text-xs">
+                        <span id="modalCategoryBadge" class="text-gold font-bold uppercase tracking-[0.15em]">HAUTE JOAILLERIE</span>
+                        <span class="text-stone-400">•</span>
+                        <span id="modalReadTimeBadge" class="text-stone-500 dark:text-stone-400 font-medium">⏱ 6 phút đọc</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 sm:gap-2">
+                        <!-- Nút chỉnh cỡ chữ -->
+                        <div class="hidden sm:flex items-center border luxury-border rounded-lg overflow-hidden bg-pearl/50 dark:bg-charcoal">
+                            <button onclick="adjustFontSize(-1)" class="px-2.5 py-1 text-xs hover:bg-gold hover:text-white transition-colors" title="Giảm cỡ chữ">A-</button>
+                            <button onclick="adjustFontSize(0)" class="px-2.5 py-1 text-xs border-x luxury-border hover:bg-gold hover:text-white transition-colors" title="Cỡ chữ mặc định">A</button>
+                            <button onclick="adjustFontSize(1)" class="px-2.5 py-1 text-xs hover:bg-gold hover:text-white transition-colors" title="Tăng cỡ chữ">A+</button>
+                        </div>
+
+                        <!-- Nút Lưu vào Vault ngay khi đang đọc -->
+                        <button id="modalBookmarkBtn" onclick="toggleWishlistFromModal()" class="p-2 rounded-full border luxury-border hover:border-gold transition-colors" title="Lưu tác phẩm này">
+                            <svg id="modalBookmarkIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                            </svg>
+                        </button>
+
+                        <!-- Nút Sao chép link chia sẻ bài viết -->
+                        <button onclick="shareCurrentArticle()" class="p-2 rounded-full border luxury-border hover:border-gold transition-colors" title="Sao chép liên kết bài viết">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                            </svg>
+                        </button>
+
+                        <!-- Nút Đóng bài viết -->
+                        <button onclick="closeArticleModal()" class="ml-1 p-1.5 rounded-full bg-pearl dark:bg-charcoal hover:bg-gold hover:text-white transition-colors" title="Đóng (ESC)">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal Body -->
+                <div id="modalBodyContent" class="p-5 sm:p-10 md:px-14">
+                    <!-- Dynamic Editorial Article Content Injected Here -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST VAULT MODAL -->
+    <div id="wishlistModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-end">
+        <div class="w-full max-w-md h-full bg-ivory dark:bg-obsidian border-l luxury-border p-6 flex flex-col justify-between overflow-y-auto">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b luxury-border mb-6">
+                    <div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-semibold">PRIVATE VAULT</span>
+                        <h3 class="font-serif text-xl font-bold" data-i18n="vaultTitle">Tủ Lưu Trữ Tuyệt Tác</h3>
+                    </div>
+                    <button onclick="toggleWishlistModal()" class="p-1.5 rounded-full hover:bg-pearl dark:hover:bg-charcoal">✕</button>
+                </div>
+                <div id="wishlistContainer" class="space-y-4"></div>
+            </div>
+            <div class="pt-4 border-t luxury-border mt-6">
+                <button onclick="toggleWishlistModal(); openConciergeModal();" class="w-full py-3 rounded-full bg-gold text-white text-xs font-bold uppercase tracking-widest hover:opacity-90">
+                    Đặt Lịch Xem Trực Tiếp Các Tác Phẩm Đã Lưu
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRIVATE CONCIERGE MODAL -->
+    <div id="conciergeModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="w-full max-w-lg rounded-2xl bg-ivory dark:bg-obsidian border luxury-border p-6 sm:p-8 relative">
+            <button onclick="closeConciergeModal()" class="absolute top-5 right-5 p-1.5 rounded-full hover:bg-pearl dark:hover:bg-charcoal">✕</button>
+            <span class="text-xs uppercase tracking-[0.2em] text-gold font-semibold block mb-1">SALON PRIVÉ CONCIERGE</span>
+            <h3 class="font-serif text-2xl font-bold mb-2">Đặt Lịch Tư Vấn Cá Nhân Thượng Lưu</h3>
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mb-6">
+                Chuyên gia kim hoàn và stylist cao cấp của L'ÉCLAT sẽ liên hệ riêng để chuẩn bị mẫu trang sức và trang phục theo yêu cầu của quý khách.
+            </p>
+            <form onsubmit="submitConcierge(event)" class="space-y-4 text-sm">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider mb-1">Danh xưng & Họ tên *</label>
+                    <input type="text" required placeholder="Ví dụ: Quý bà Minh Khuê / Mr. Laurent" class="w-full px-3.5 py-2.5 rounded-lg bg-pearl/60 dark:bg-charcoal border luxury-border focus:outline-none focus:border-gold">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider mb-1">Số điện thoại / WhatsApp *</label>
+                        <input type="tel" required placeholder="+84 90..." class="w-full px-3.5 py-2.5 rounded-lg bg-pearl/60 dark:bg-charcoal border luxury-border focus:outline-none focus:border-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider mb-1">Địa điểm Salon</label>
+                        <select class="w-full px-3.5 py-2.5 rounded-lg bg-pearl/60 dark:bg-charcoal border luxury-border focus:outline-none focus:border-gold">
+                            <option>Sài Gòn — Private Suite Quận 1</option>
+                            <option>Hà Nội — Sofitel Metropole Salon</option>
+                            <option>Paris — Place Vendôme</option>
+                            <option>Geneva — Rue du Rhône</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-full bg-gold text-white font-bold text-xs uppercase tracking-widest hover:opacity-95 transition-all">
+                    Xác Nhận Yêu Cầu Đặt Lịch Đặc Quyền
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden px-5 py-3 rounded-xl bg-stone-900 text-white border border-gold shadow-xl text-xs font-medium flex items-center gap-2.5">
+        <span class="w-2 h-2 rounded-full bg-gold"></span>
+        <span id="toastMsg">Đã lưu vào Tủ Lưu Trữ</span>
+    </div>
+
+    <!-- JAVASCRIPT ENGINE -->
+    <script>
+        // 1. DANH SÁCH 6 URL CHÍNH THỨC CỦA HỆ SINH THÁI ATD – STELLAR
+        const ATD_STELLAR_URLS = {
+            home: {
+                titleVi: "ATD – Stellar",
+                titleEn: "ATD – Stellar",
+                url: "https://edu-atd-stellar.odoo.com/"
+            },
+            shop: {
+                titleVi: "cửa hàng trang sức ATD – Stellar",
+                titleEn: "ATD – Stellar Online Boutique",
+                url: "https://edu-atd-stellar.odoo.com/shop"
+            },
+            hoaKimCuong: {
+                titleVi: "Dây chuyền Hoa Kim Cương",
+                titleEn: "Diamond Flower Necklace",
+                url: "https://edu-atd-stellar.odoo.com/shop/day-chuyen-hoa-kim-cuong-1"
+            },
+            giotNang: {
+                titleVi: "Dây chuyền Giọt Nắng",
+                titleEn: "Sunlit Drop Necklace",
+                url: "https://edu-atd-stellar.odoo.com/shop/bubu02-day-chuyen-giot-nang-9"
+            },
+            traiTimHoangGia: {
+                titleVi: "Dây chuyền Trái Tim Hoàng Gia",
+                titleEn: "Royal Heart Necklace",
+                url: "https://edu-atd-stellar.odoo.com/shop/bubu01-day-chuyen-trai-tim-hoang-gia-8"
+            },
+            vuDieuAnhKim: {
+                titleVi: "Dây chuyền Vũ Điệu Ánh Kim",
+                titleEn: "Metallic Dance Necklace",
+                url: "https://edu-atd-stellar.odoo.com/shop/bubu03-day-chuyen-vu-%C4%91ieu-anh-kim-10"
+            }
+        };
+
+        // 2. BỘ TỪ ĐIỂN GIAO DIỆN SONG NGỮ VI / EN
+        const uiTranslations = {
+            vi: {
+                btnConcierge: "Đặt Lịch Tư Vấn",
+                seoHeroKicker: "ẤN PHẨM SONG NGỮ THƯỢNG LƯU • HAUTE JOAILLERIE & HAUTE COUTURE",
+                mainH1Title: "L'ÉCLAT — Tạp Chí Trang Sức Độc Bản & Thời Trang Thượng Lưu",
+                mainH1Sub: "Chuẩn mực biên tập chuyên sâu kết hợp nghệ thuật chế tác kim hoàn, bí quyết phối đồ tôn dáng và hệ sinh thái trang sức tinh tuyển.",
+                sectionSub1: "TUYỂN TẬP BIÊN TẬP CHUYÊN SÂU",
+                sectionTitle1: "Tất Cả Tuyệt Tác Trang Sức & Trang Phục",
+                filterLabel: "Chuyên mục:",
+                sortLabel: "Sắp xếp:",
+                sortNewest: "Mới nhất & Nổi bật",
+                sortPrice: "Định giá: Cao đến Thấp",
+                sortHours: "Giờ chế tác thủ công",
+                pairingSub: "NGHỆ THUẬT MIX & MATCH THƯỢNG LƯU",
+                pairingTitle: "Phối Hợp Trang Sức & Trang Phục Dạ Tiệc",
+                pairingDesc: "Khám phá quy tắc kết hợp tỷ lệ cổ áo, chất liệu vải và ánh sắc đá quý hoàn hảo cho từng sự kiện thảm đỏ hay dạ tiệc tối.",
+                footerCopy: "© 2026 L'ÉCLAT Magazine. Ấn phẩm Trang sức & Thời trang Thượng lưu.",
+                vaultTitle: "Tủ Lưu Trữ Tuyệt Tác",
+                readMore: "Khám Phá Tuyệt Tác",
+                catAll: "Tất cả bài viết (26)",
+                catJewelry: "Trang Sức Độc Bản (19)",
+                catCouture: "Trang Phục Thượng Lưu (7)",
+                catNew8: "Mới Tuyển Chọn (8)"
+            },
+            en: {
+                btnConcierge: "Private Concierge",
+                seoHeroKicker: "BILINGUAL LUXURY EDITION • HAUTE JOAILLERIE & HAUTE COUTURE",
+                mainH1Title: "L'ÉCLAT — High Jewelry & Luxury Fashion Magazine",
+                mainH1Sub: "In-depth editorial standards uniting fine jewelry savoir-faire, flattering styling rules, and curated jewelry collections.",
+                sectionSub1: "CURATED EDITORIAL ANTHOLOGY",
+                sectionTitle1: "All High Jewelry & Haute Couture Masterpieces",
+                filterLabel: "Category:",
+                sortLabel: "Sort by:",
+                sortNewest: "Newest & Featured",
+                sortPrice: "Valuation: High to Low",
+                sortHours: "Craftsmanship Hours",
+                pairingSub: "THE ART OF LUXURY MIX & MATCH",
+                pairingTitle: "High Jewelry & Evening Couture Pairing",
+                pairingDesc: "Explore neckline proportions, fabric textures, and gemstone luminescence tailored for gala evenings.",
+                footerCopy: "© 2026 L'ÉCLAT Magazine. High Jewelry & Couture Platform.",
+                vaultTitle: "Private Masterpiece Vault",
+                readMore: "Explore Editorial",
+                catAll: "All Editorials (26)",
+                catJewelry: "High Jewelry (19)",
+                catCouture: "Haute Couture (7)",
+                catNew8: "Newly Curated (8)"
+            }
+        };
+
+        // 3. CƠ SỞ DỮ LIỆU 26 BÀI VIẾT
+        const articlesData = [
+            {
+                id: 101,
+                isNew8: true,
+                featured: true,
+                category: "jewelry",
+                slug: "day-chuyen-kim-cuong-xanh-coeur-de-locean",
+                seoTitleVi: "Dây Chuyền Kim Cương Xanh 15.4ct & Cách Chọn Trang Sức Nữ",
+                seoDescVi: "Khám phá dây chuyền kim cương xanh 15.4ct và bí quyết chọn dây chuyền nữ làm quà tặng tinh tế tại ATD – Stellar.",
+                primaryKeyword: "dây chuyền nữ, trang sức nữ, kim cương xanh",
+                searchIntent: "Inspirational & Commercial",
+                image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=85",
+                imageName: "day-chuyen-kim-cuong-xanh-coeur-de-locean.webp",
+                priceValue: 34000000,
+                priceDisplay: "$34,000,000",
+                hours: 2100,
+                atelier: "Place Vendôme, Paris",
+                vi: {
+                    title: "Dây Chuyền Kim Cương Xanh 'Cœur de l'Océan' 15.4 Carat: Tuyệt Tác Trang Sức Nữ & Nghệ Thuật Quà Tặng",
+                    excerpt: "Viên kim cương xanh Type IIb 15.4 carat từ mỏ Cullinan kết hợp kim cương hồng Argyle, mở ra chuẩn mực mới về cách chọn dây chuyền nữ làm quà kỷ niệm vĩnh cửu.",
+                    specs: { material: "Bạch kim Pt950 & Vàng hồng 18K", gemstone: "Kim cương xanh Type IIb 15.4ct (GIA)", weight: "68.4 grams", origin: "Mỏ Cullinan, Nam Phi" }
+                },
+                en: {
+                    title: "'Cœur de l'Océan' 15.4-Carat Blue Diamond Necklace: High Jewelry & The Art of Gifting",
+                    excerpt: "A 15.4-carat Type IIb Fancy Vivid Blue diamond from the Cullinan mine paired with Argyle pink diamonds sets a new benchmark for fine jewelry.",
+                    specs: { material: "Platinum Pt950 & 18K Rose Gold", gemstone: "15.4ct Type IIb Blue Diamond (GIA)", weight: "68.4 grams", origin: "Cullinan Mine, South Africa" }
+                }
+            },
+            {
+                id: 102,
+                isNew8: true,
+                category: "jewelry",
+                slug: "vong-co-ran-than-cleopatra-ngoc-luc-bao",
+                seoTitleVi: "Vòng Cổ Ngọc Lục Bảo Cleopatra & Xu Hướng Dây Chuyền 2026",
+                seoDescVi: "Chiêm ngưỡng vòng cổ ngọc lục bảo 31.5ct và khám phá xu hướng dây chuyền nữ ánh kim dự tiệc sang trọng ngay hôm nay.",
+                primaryKeyword: "dây chuyền ánh kim, xu hướng dây chuyền nữ 2026",
+                searchIntent: "Inspirational",
+                image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=85",
+                imageName: "vong-co-ran-than-cleopatra-ngoc-luc-bao.webp",
+                priceValue: 9800000,
+                priceDisplay: "$9,800,000",
+                hours: 1650,
+                atelier: "Via Condotti, Rome",
+                vi: {
+                    title: "Vòng Cổ 'Rắn Thần Cleopatra' Nạm Ngọc Lục Bảo 31.5 Carat & Xu Hướng Dây Chuyền Ánh Kim Dự Tiệc",
+                    excerpt: "148 đốt vảy vàng 18K liên kết cơ khí ẩn ôm sát xương quai xanh, tôn vinh vẻ đẹp quyền lực của người phụ nữ hiện đại trong những buổi dạ tiệc.",
+                    specs: { material: "Vàng 18K nguyên khối & Bạch kim", gemstone: "Ngọc lục bảo Zambia 31.5ct (SSEF)", weight: "112.0 grams", origin: "Rome, Ý" }
+                },
+                en: {
+                    title: "'Serpent d'Émeraude' 31.5-Carat Emerald Necklace & Evening Metallic Jewelry Trends",
+                    excerpt: "148 articulated 18K gold scales engineered with hidden micro-springs hug the collarbone with hypnotic grace.",
+                    specs: { material: "18K Yellow Gold & Platinum", gemstone: "31.5ct Zambian Emerald (SSEF)", weight: "112.0 grams", origin: "Rome, Italy" }
+                }
+            },
+            {
+                id: 103,
+                isNew8: true,
+                category: "jewelry",
+                slug: "nhan-da-alexandrite-nga-doi-mau-21-carat",
+                seoTitleVi: "Trang Sức Đá Alexandrite Đổi Màu & Cách Chọn Quà Sinh Nhật",
+                seoDescVi: "Bí ẩn viên đá Alexandrite Nga 21.3ct đổi màu kỳ diệu và kinh nghiệm chọn trang sức nữ theo phong cách cá nhân.",
+                primaryKeyword: "trang sức nữ, cách chọn trang sức theo phong cách cá nhân",
+                searchIntent: "Informational & Commercial",
+                image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=85",
+                imageName: "nhan-da-alexandrite-nga-doi-mau-21-carat.webp",
+                priceValue: 7400000,
+                priceDisplay: "$7,400,000",
+                hours: 980,
+                atelier: "Geneva, Thụy Sĩ",
+                vi: {
+                    title: "Đá Alexandrite Nga Đổi Màu 21.3 Carat: Phép Thuật Ánh Sáng & Cách Chọn Trang Sức Theo Cá Tính",
+                    excerpt: "Xanh lục bảo dưới nắng ban ngày và hóa đỏ hồng ngọc dưới ánh nến ban đêm — bảo vật vùng núi Ural dành cho những tâm hồn yêu sự độc bản.",
+                    specs: { material: "Bạch kim Pt950 rèn tay", gemstone: "Alexandrite Ural 21.3ct (Gübelin)", weight: "24.5 grams", origin: "Dãy núi Ural, Nga" }
+                },
+                en: {
+                    title: "21.3-Carat Russian Color-Change Alexandrite: Imperial Magic & Personal Style Guide",
+                    excerpt: "Emerald green by daylight and ruby crimson by candlelight — a rare Ural treasure crafted for connoisseurs.",
+                    specs: { material: "Hand-forged Platinum Pt950", gemstone: "21.3ct Ural Alexandrite (Gübelin)", weight: "24.5 grams", origin: "Ural Mountains, Russia" }
+                }
+            },
+            {
+                id: 104,
+                isNew8: true,
+                category: "jewelry",
+                slug: "bong-tai-kim-cuong-vang-gouttes-de-soleil",
+                seoTitleVi: "Trang Sức Ánh Kim 'Giọt Nắng' & Phối Phụ Kiện Thanh Lịch",
+                seoDescVi: "Khám phá đôi hoa tai kim cương vàng 38.4ct cùng cách chọn dây chuyền thanh lịch tỏa sáng như giọt nắng ban mai.",
+                primaryKeyword: "dây chuyền thanh lịch, phụ kiện ánh kim",
+                searchIntent: "Inspirational & Transactional",
+                image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=1000&q=85",
+                imageName: "bong-tai-kim-cuong-vang-gouttes-de-soleil.webp",
+                priceValue: 11200000,
+                priceDisplay: "$11,200,000",
+                hours: 1120,
+                atelier: "Place Vendôme, Paris",
+                vi: {
+                    title: "Tuyệt Tác Kim Cương Vàng 'Gouttes de Soleil' 38.4 Carat: Cảm Hứng Giọt Nắng Trong Trang Sức Nữ",
+                    excerpt: "Sắc vàng Fancy Vivid Yellow rực rỡ từ mỏ Zimmi truyền cảm hứng cho những thiết kế trang sức giọt nắng thanh lịch, tôn vinh làn da Á Đông.",
+                    specs: { material: "Vàng vàng 18K & Bạch kim", gemstone: "Cặp kim cương vàng Zimmi 38.4ct", weight: "32.0 grams", origin: "Mỏ Zimmi, Sierra Leone" }
+                },
+                en: {
+                    title: "'Gouttes de Soleil' 38.4-Carat Zimmi Yellow Diamonds: Sunlit Elegance in Fine Jewelry",
+                    excerpt: "Radiant Fancy Vivid Yellow diamonds from the Zimmi mine inspire sunlit jewelry silhouettes.",
+                    specs: { material: "18K Yellow Gold & Platinum", gemstone: "38.4ct Zimmi Yellow Diamonds", weight: "32.0 grams", origin: "Zimmi Mine, Sierra Leone" }
+                }
+            },
+            {
+                id: 105,
+                isNew8: true,
+                category: "jewelry",
+                slug: "kieng-co-kham-trai-xa-cu-anh-trang-co-do",
+                seoTitleVi: "Trang Sức Tặng Mẹ: Kiềng Cổ Ánh Trăng Cố Đô & Cách Bảo Quản",
+                seoDescVi: "Gợi ý trang sức tặng mẹ ý nghĩa với kiềng cổ khảm xà cừ kim cương và hướng dẫn cách bảo quản trang sức luôn sáng bóng.",
+                primaryKeyword: "trang sức tặng mẹ, cách bảo quản trang sức",
+                searchIntent: "Commercial & Informational",
+                image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=85",
+                imageName: "kieng-co-kham-trai-xa-cu-anh-trang-co-do.webp",
+                priceValue: 3200000,
+                priceDisplay: "$3,200,000",
+                hours: 1450,
+                atelier: "Cố đô Huế & Paris",
+                vi: {
+                    title: "Kiềng Cổ Khảm Xà Cừ & Kim Cương 'Ánh Trăng Cố Đô': Món Quà Trang Sức Tặng Mẹ Đầy Trân Trọng",
+                    excerpt: "Sự giao thoa giữa nghệ thuật cẩn ốc xà cừ cung đình Huế và kỹ thuật nạm kim cương Pháp, gửi gắm lòng biết ơn sâu sắc dành tặng người mẹ kính yêu.",
+                    specs: { material: "Vàng trắng 18K & Xà cừ tự nhiên", gemstone: "Kim cương trắng D-IF 14.8ct", weight: "84.0 grams", origin: "Việt Nam & Pháp" }
+                },
+                en: {
+                    title: "'Moonlight of the Imperial Citadel' Mother-of-Pearl & Diamond Torque: Meaningful Jewelry Gift",
+                    excerpt: "A poetic dialogue between Hue royal mother-of-pearl inlay and Place Vendôme diamond setting.",
+                    specs: { material: "18K White Gold & Natural Nacre", gemstone: "14.8ct D-IF White Diamonds", weight: "84.0 grams", origin: "Vietnam & France" }
+                }
+            },
+            {
+                id: 106,
+                isNew8: true,
+                category: "jewelry",
+                slug: "nhan-padparadscha-sapphire-hoang-hon-ceylon",
+                seoTitleVi: "Trang Sức Tặng Người Yêu: Sapphire Hồng Cam & Dây Chuyền Đẹp",
+                seoDescVi: "Tư vấn chọn dây chuyền tặng người yêu và nhẫn Sapphire Padparadscha 18.2ct mang thông điệp kỷ niệm tình yêu lãng mạn.",
+                primaryKeyword: "dây chuyền tặng người yêu, quà kỷ niệm tình yêu",
+                searchIntent: "Commercial",
+                image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1000&q=85",
+                imageName: "nhan-padparadscha-sapphire-hoang-hon-ceylon.webp",
+                priceValue: 5600000,
+                priceDisplay: "$5,600,000",
+                hours: 890,
+                atelier: "Colombo & Geneva",
+                vi: {
+                    title: "Sapphire Padparadscha 'Hoàng Hôn Ceylon' 18.2 Carat & Nghệ Thuật Chọn Trang Sức Tặng Người Yêu",
+                    excerpt: "Sắc hồng hoa sen hòa quyện ánh cam hoàng hôn của viên Sapphire Sri Lanka không qua xử lý nhiệt là biểu tượng hoàn mỹ cho món quà kỷ niệm tình yêu.",
+                    specs: { material: "Bạch kim Pt950 & Vàng hồng", gemstone: "Padparadscha Sapphire 18.2ct (SSEF)", weight: "19.8 grams", origin: "Ratnapura, Sri Lanka" }
+                },
+                en: {
+                    title: "'Ceylon Sunset' 18.2-Carat Padparadscha Sapphire & Romantic Jewelry Gift Guide",
+                    excerpt: "Blending lotus pink and sunset orange, this unheated Sri Lankan sapphire embodies eternal romance.",
+                    specs: { material: "Platinum Pt950 & Rose Gold", gemstone: "18.2ct Padparadscha Sapphire", weight: "19.8 grams", origin: "Ratnapura, Sri Lanka" }
+                }
+            },
+            {
+                id: 107,
+                isNew8: true,
+                category: "jewelry",
+                slug: "vuong-mien-bong-lua-mach-vang-hoang-hau",
+                seoTitleVi: "Trang Sức Họa Tiết Hoa Lá & Dây Chuyền Hoa Kim Cương Tinh Tế",
+                seoDescVi: "Khám phá vương miện nhánh lúa mạch vàng kỹ thuật En Tremblant và mẫu dây chuyền Hoa Kim Cương tôn nét nữ tính.",
+                primaryKeyword: "dây chuyền mặt hoa, trang sức nữ tính",
+                searchIntent: "Inspirational & Commercial",
+                image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85",
+                imageName: "vuong-mien-bong-lua-mach-vang-hoang-hau.webp",
+                priceValue: 6900000,
+                priceDisplay: "$6,900,000",
+                hours: 1820,
+                atelier: "Place Vendôme, Paris",
+                vi: {
+                    title: "Vương Miện 'Bông Lúa Mạch Vàng' Kỹ Thuật En Tremblant & Sức Hút Trang Sức Họa Tiết Thiên Nhiên",
+                    excerpt: "Mỗi bông lúa và cánh hoa kim cương rung rinh theo từng nhịp bước chân nhờ lò xo vi cơ khí thế kỷ 19, biểu trưng cho sự trù phú và vẻ đẹp thanh tao.",
+                    specs: { material: "Vàng 18K & Bạc cổ điển", gemstone: "Imperial Topaz 45ct & Kim cương", weight: "142.0 grams", origin: "Paris, Pháp" }
+                },
+                en: {
+                    title: "'Golden Wheat Sheaf' En Tremblant Tiara & Botanical Jewelry Craftsmanship",
+                    excerpt: "Set on 19th-century micro-springs, every diamond petal and wheat sheaf trembles with the wearer's movement.",
+                    specs: { material: "18K Gold & Antique Silver", gemstone: "45ct Imperial Topaz & Diamonds", weight: "142.0 grams", origin: "Paris, France" }
+                }
+            },
+            {
+                id: 108,
+                isNew8: true,
+                category: "jewelry",
+                slug: "vong-tay-cuff-da-lapis-lazuli-vang-phuc-hung",
+                seoTitleVi: "Trang Sức Vàng Chạm Khắc & Cách Bảo Quản Trang Sức Bạc, Vàng",
+                seoDescVi: "Nghệ thuật chạm khắc vàng Rigato trên đá Lapis Lazuli và hướng dẫn chi tiết cách bảo quản trang sức bạc, vàng bền đẹp.",
+                primaryKeyword: "cách bảo quản trang sức bạc, dây chuyền vàng",
+                searchIntent: "Informational",
+                image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1000&q=85",
+                imageName: "vong-tay-cuff-da-lapis-lazuli-vang-phuc-hung.webp",
+                priceValue: 2450000,
+                priceDisplay: "$2,450,000",
+                hours: 1150,
+                atelier: "Florence, Ý",
+                vi: {
+                    title: "Tuyệt Tác Vàng Chạm Khắc Phục Hưng 'Nuit Céleste' & Cẩm Nang Bảo Quản Trang Sức Đúng Chuẩn",
+                    excerpt: "Kỹ thuật khắc rãnh song song Rigato vùng Florence biến bề mặt vàng 18K thành dải lụa óng ả ôm lấy viên đá Lapis Lazuli xanh thẳm vùng Sar-e-Sang.",
+                    specs: { material: "Vàng 18K khắc tay Rigato", gemstone: "Đá Lapis Lazuli Afghanistan & Kim cương", weight: "96.5 grams", origin: "Florence, Ý" }
+                },
+                en: {
+                    title: "'Nuit Céleste' Florentine Rigato Gold & Lapis Lazuli Cuff: Care & Craftsmanship Guide",
+                    excerpt: "Florentine Rigato hand-engraving transforms 18K gold into a silky texture framing deep Afghan Lapis Lazuli.",
+                    specs: { material: "18K Rigato Engraved Gold", gemstone: "Afghan Lapis Lazuli & Diamonds", weight: "96.5 grams", origin: "Florence, Italy" }
+                }
+            },
+            {
+                id: 1,
+                category: "jewelry",
+                slug: "vong-co-lam-ngoc-kashmir-42-carat",
+                seoTitleVi: "Cách Phối Dây Chuyền Với Cổ Áo Chữ V & Lam Ngọc Kashmir 42ct",
+                seoDescVi: "Chiêm ngưỡng vòng cổ Lam ngọc Kashmir 42.8ct và nắm vững quy tắc phối dây chuyền nữ với từng dáng cổ áo chữ V, cổ trễ.",
+                primaryKeyword: "cách phối dây chuyền với cổ áo chữ V, dây chuyền nữ",
+                searchIntent: "Informational & Commercial",
+                image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=1000&q=85",
+                imageName: "vong-co-lam-ngoc-kashmir-42-carat.webp",
+                priceValue: 18500000,
+                priceDisplay: "$18,500,000",
+                hours: 1800,
+                atelier: "Geneva, Thụy Sĩ",
+                vi: {
+                    title: "Vòng Cổ Rivière Lam Ngọc Kashmir 42.8 Carat & Quy Tắc Chọn Dây Chuyền Theo Dáng Cổ Áo",
+                    excerpt: "Sắc xanh hoa thanh cúc mượt như nhung của Lam ngọc Kashmir hòa quyện cùng nghệ thuật chọn độ dài dây chuyền tôn vinh đường nét cổ áo chữ V quyến rũ.",
+                    specs: { material: "Bạch kim Pt950", gemstone: "Lam ngọc Kashmir 42.8ct không nung (SSEF)", weight: "75.2 grams", origin: "Kashmir & Geneva" }
+                },
+                en: {
+                    title: "42.8-Carat Kashmir Sapphire Rivière Necklace & Neckline Styling Guide",
+                    excerpt: "Velvety cornflower-blue Kashmir sapphires paired with definitive rules on matching necklace lengths to V-necklines.",
+                    specs: { material: "Platinum Pt950", gemstone: "42.8ct Unheated Kashmir Sapphires", weight: "75.2 grams", origin: "Kashmir & Geneva" }
+                }
+            },
+            {
+                id: 2,
+                category: "couture",
+                slug: "cach-phoi-dam-du-tiec-haute-couture-paris",
+                seoTitleVi: "Cách Phối Đầm Dự Tiệc Sang Trọng & Nghệ Thuật Thêu Tay Paris",
+                seoDescVi: "Khám phá 900 giờ thêu tay đầm Haute Couture Paris và bí quyết phối đầm dự tiệc tôn dáng cùng phụ kiện dây chuyền ánh kim.",
+                primaryKeyword: "đầm dự tiệc, cách phối đồ tôn dáng, váy đẹp",
+                searchIntent: "Informational & Commercial",
+                image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1000&q=85",
+                imageName: "cach-phoi-dam-du-tiec-haute-couture-paris.webp",
+                priceValue: 380000,
+                priceDisplay: "$380,000",
+                hours: 900,
+                atelier: "Avenue Montaigne, Paris",
+                vi: {
+                    title: "Les Petits Mains Của Paris: 900 Giờ Thêu Tay Đầm Dạ Hội & Bí Quyết Chọn Đầm Dự Tiệc Tôn Dáng",
+                    excerpt: "Từ kỹ thuật thêu móc Lunéville trứ danh tại Paris đến cẩm nang chọn phom váy dự tiệc che khuyết điểm, tôn vòng eo và phối cùng trang sức hoa kim cương.",
+                    specs: { material: "Lụa Organza tơ tằm & Pha lê Pháp", gemstone: "Chỉ vàng 24K & Cườm cổ điển", weight: "1,850 grams", origin: "Paris, Pháp" }
+                },
+                en: {
+                    title: "Les Petits Mains of Paris: 900 Hours of Haute Couture Embroidery & Evening Gown Guide",
+                    excerpt: "Inside Paris's famed embroidery ateliers and practical rules for choosing flattering evening gown silhouettes.",
+                    specs: { material: "Mulberry Silk Organza & Crystals", gemstone: "24K Gold Thread & Micro-beads", weight: "1,850 grams", origin: "Paris, France" }
+                }
+            },
+            {
+                id: 3,
+                category: "jewelry",
+                slug: "tram-cai-ao-phi-thuy-de-vuong-jadeite",
+                seoTitleVi: "Trang Sức Phong Thủy Cao Cấp: Phỉ Thúy Đế Vương & Kim Cương",
+                seoDescVi: "Tìm hiểu giá trị thật của Phỉ Thúy Imperial Jadeite, ý nghĩa biểu tượng văn hóa và cách kiểm định trang sức đá quý chuẩn GIA.",
+                primaryKeyword: "trang sức nữ, kiểm định trang sức, đá quý phong thủy",
+                searchIntent: "Informational",
+                image: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1000&q=85",
+                imageName: "tram-cai-ao-phi-thuy-de-vuong-jadeite.webp",
+                priceValue: 12400000,
+                priceDisplay: "$12,400,000",
+                hours: 1320,
+                atelier: "Hồng Kông & Paris",
+                vi: {
+                    title: "Trâm Cài Phỉ Thúy Đế Vương (Imperial Jadeite) & Kim Cương Hồng: Hiểu Đúng Về Giá Trị Và Kiểm Định",
+                    excerpt: "Phân tích chuẩn kiểm định Phỉ thúy Type A tự nhiên cùng góc nhìn văn hóa tinh tế, tách biệt rõ giá trị thẩm mỹ khoa học với những lời đồn thổi thiếu căn cứ.",
+                    specs: { material: "Bạch kim Pt950 & Vàng hồng", gemstone: "Imperial Jadeite Type A & Kim cương hồng", weight: "41.2 grams", origin: "Myanmar & Pháp" }
+                },
+                en: {
+                    title: "Imperial Jadeite & Argyle Pink Diamond Brooch: Authentication & Cultural Heritage",
+                    excerpt: "Understanding Type A Jadeite certification and cultural symbolism with scientific clarity.",
+                    specs: { material: "Platinum Pt950 & Rose Gold", gemstone: "Type A Imperial Jadeite & Pink Diamonds", weight: "41.2 grams", origin: "Myanmar & France" }
+                }
+            },
+            {
+                id: 4,
+                category: "couture",
+                slug: "phong-cach-quiet-luxury-au-phuc-soi-vicuna",
+                seoTitleVi: "Xu Hướng Quiet Luxury: Âu Phục Sợi Vicuña & Phối Đồ Công Sở",
+                seoDescVi: "Giải mã xu hướng Quiet Luxury qua chất liệu sợi vàng Vicuña và cách phối đồ thời trang công sở thanh lịch, chống nhăn.",
+                primaryKeyword: "Quiet Luxury, thời trang công sở, áo blazer nữ",
+                searchIntent: "Informational & Trend",
+                image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85",
+                imageName: "phong-cach-quiet-luxury-au-phuc-soi-vicuna.webp",
+                priceValue: 95000,
+                priceDisplay: "$95,000",
+                hours: 320,
+                atelier: "Savile Row, London",
+                vi: {
+                    title: "Xu Hướng Quiet Luxury: Sợi Vàng Vicuña Trên Phố Savile Row & Bí Quyết Phối Đồ Công Sở Thượng Lưu",
+                    excerpt: "Vì sao giới tinh hoa say mê những bộ blazer và âu phục không logo từ sợi lông Vicuña siêu mảnh 12 micron? Hướng dẫn ứng dụng phong cách Quiet Luxury vào trang phục công sở.",
+                    specs: { material: "100% Sợi lông Vicuña dãy Andes", gemstone: "Khuy sừng trâu nước & Lót lụa Bemberg", weight: "620 grams", origin: "Savile Row, Anh Quốc" }
+                },
+                en: {
+                    title: "Quiet Luxury Decoded: Savile Row Vicuña Tailoring & Executive Wardrobe Styling",
+                    excerpt: "Why the ultra-wealthy favor logo-free 12-micron Vicuña tailoring and how to apply Quiet Luxury to modern workwear.",
+                    specs: { material: "100% Andean Vicuña Wool", gemstone: "Horn Buttons & Bemberg Silk Lining", weight: "620 grams", origin: "Savile Row, London" }
+                }
+            },
+            {
+                id: 5,
+                category: "jewelry",
+                slug: "dong-ho-trang-suc-bi-mat-secret-watch-ruby",
+                seoTitleVi: "Trang Sức Cao Cấp: Đồng Hồ Bí Mật Hồng Ngọc & Quà Tặng Tinh Tế",
+                seoDescVi: "Khám phá tuyệt tác đồng hồ trang sức ẩn dưới cánh hoa hồng ngọc Mogok và gợi ý chọn quà tặng sinh nhật tinh tế cho phái đẹp.",
+                primaryKeyword: "quà tặng sinh nhật tinh tế, trang sức nữ",
+                searchIntent: "Inspirational & Commercial",
+                image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=85",
+                imageName: "dong-ho-trang-suc-bi-mat-secret-watch-ruby.webp",
+                priceValue: 4800000,
+                priceDisplay: "$4,800,000",
+                hours: 1540,
+                atelier: "Geneva, Thụy Sĩ",
+                vi: {
+                    title: "Đồng Hồ Trang Sức Bí Mật (Secret Watch) Hồng Ngọc Mogok: Món Quà Tinh Tế Vượt Thời Gian",
+                    excerpt: "Ẩn dưới đóa hoa hồng ngọc huyết bồ câu 24.6 carat là cỗ máy cơ khí siêu nhỏ — minh chứng cho nghệ thuật kể chuyện đầy cảm xúc trong từng món quà trang sức.",
+                    specs: { material: "Vàng trắng 18K & Bạch kim", gemstone: "Hồng ngọc Mogok 24.6ct & Kim cương", weight: "58.0 grams", origin: "Geneva, Thụy Sĩ" }
+                },
+                en: {
+                    title: "Mogok Ruby Secret High Jewelry Watch: Timeless Storytelling in Fine Gifts",
+                    excerpt: "Concealed beneath a 24.6-carat pigeon's blood ruby blossom lies a miniature mechanical movement.",
+                    specs: { material: "18K White Gold & Platinum", gemstone: "24.6ct Mogok Rubies & Diamonds", weight: "58.0 grams", origin: "Geneva, Switzerland" }
+                }
+            },
+            {
+                id: 6,
+                category: "jewelry",
+                slug: "bo-trang-suc-ngoc-luc-bao-muzo-colombia",
+                seoTitleVi: "Bộ Trang Sức Nữ Ngọc Lục Bảo Colombia & Cách Chọn Dây Chuyền",
+                seoDescVi: "Chiêm ngưỡng bộ trang sức ngọc lục bảo Muzo 118ct và học cách chọn dây chuyền nữ hài hòa với khuôn mặt và trang phục.",
+                primaryKeyword: "trang sức nữ, dây chuyền nữ",
+                searchIntent: "Informational & Commercial",
+                image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=1000&q=85",
+                imageName: "bo-trang-suc-ngoc-luc-bao-muzo-colombia.webp",
+                priceValue: 22000000,
+                priceDisplay: "$22,000,000",
+                hours: 2400,
+                atelier: "Place Vendôme, Paris",
+                vi: {
+                    title: "Bộ Trang Sức Ngọc Lục Bảo Muzo Colombia 118 Carat: Khuôn Mẫu Của Sự Cân Đối Và Thanh Lịch",
+                    excerpt: "Tuyệt tác Parure gồm vòng cổ, hoa tai và nhẫn ngọc lục bảo Muzo không tẩm dầu, định hình nguyên tắc phối đồng bộ trang sức mà không gây nặng nề.",
+                    specs: { material: "Bạch kim Pt950", gemstone: "Ngọc lục bảo Muzo 118ct (Gübelin)", weight: "134.0 grams", origin: "Muzo, Colombia & Pháp" }
+                },
+                en: {
+                    title: "118-Carat Muzo Colombian Emerald Parure: Masterclass in Jewelry Proportion",
+                    excerpt: "An extraordinary suite of no-oil Muzo emeralds illustrating how to balance statement jewelry pieces effortlessly.",
+                    specs: { material: "Platinum Pt950", gemstone: "118ct No-Oil Muzo Emeralds", weight: "134.0 grams", origin: "Colombia & France" }
+                }
+            },
+            {
+                id: 7,
+                category: "couture",
+                slug: "phoi-do-mua-dong-ao-choang-nhung-lua-opera",
+                seoTitleVi: "Phối Đồ Mùa Đông Sang Trọng Với Áo Khoác Nữ Nhung Lụa & Gấm",
+                seoDescVi: "Bí quyết phối đồ mùa đông ấm áp, tôn dáng với áo khoác nữ nhung lụa Ý, gấm dệt vàng và phụ kiện dây chuyền ánh kim.",
+                primaryKeyword: "phối đồ mùa đông, áo khoác nữ",
+                searchIntent: "Seasonal & Informational",
+                image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85",
+                imageName: "phoi-do-mua-dong-ao-choang-nhung-lua-opera.webp",
+                priceValue: 145000,
+                priceDisplay: "$145,000",
+                hours: 640,
+                atelier: "Milan & Lyon",
+                vi: {
+                    title: "Nhung Lụa Ý & Gấm Dệt Vàng Lyon: Nghệ Thuật Phối Đồ Mùa Đông Sang Trọng Không Cồng Kềnh",
+                    excerpt: "Cách kết hợp áo khoác choàng Opera nhung tơ tằm giữ nhiệt tự nhiên cùng đầm dạ hội và trang sức cổ, giúp quý cô giữ trọn phom dáng thon gọn giữa tiết trời lạnh.",
+                    specs: { material: "Nhung lụa tơ tằm Venezia & Gấm Lyon", gemstone: "Khuy mạ vàng 24K chạm nổi", weight: "1,420 grams", origin: "Milan & Lyon" }
+                },
+                en: {
+                    title: "Venetian Silk Velvet & Lyon Gold Brocade: Elegant Winter Layering Guide",
+                    excerpt: "How to layer structured opera coats over evening wear for warmth without sacrificing a sleek silhouette.",
+                    specs: { material: "Venetian Silk Velvet & Lyon Brocade", gemstone: "24K Gold-plated Clasps", weight: "1,420 grams", origin: "Milan & Lyon" }
+                }
+            },
+            {
+                id: 8,
+                category: "couture",
+                slug: "trang-phuc-tet-lua-lanh-my-a-theu-chi-vang",
+                seoTitleVi: "Trang Phục Tết Thượng Lưu: Lụa Lãnh Mỹ A & Cách Chọn Size Áo",
+                seoDescVi: "Khám phá di sản lụa Lãnh Mỹ A thêu chỉ vàng cho mùa trang phục Tết và hướng dẫn chọn kích cỡ, bảo quản lụa tơ tằm tự nhiên.",
+                primaryKeyword: "trang phục Tết, váy đẹp, chất liệu lụa",
+                searchIntent: "Seasonal & Informational",
+                image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85",
+                imageName: "trang-phuc-tet-lua-lanh-my-a-theu-chi-vang.webp",
+                priceValue: 68000,
+                priceDisplay: "$68,000",
+                hours: 780,
+                atelier: "Tân Châu & Sài Gòn",
+                vi: {
+                    title: "Di Sản Lụa Lãnh Mỹ A Thêu Chỉ Vàng 24K: Tuyệt Tác Trang Phục Lễ Tết & Nghệ Thuật Cảm Nhận Chất Vải",
+                    excerpt: "Mát lạnh vào mùa hạ, ấm áp vào mùa đông với bề mặt đen nhánh ánh trai tự nhiên từ trái mặc nưa — cẩm nang diện trang phục truyền thống kết hợp dây chuyền hiện đại.",
+                    specs: { material: "100% Lụa tơ tằm Lãnh Mỹ A nhuộm mặc nưa", gemstone: "Thêu chỉ vàng 24K & Đậu bạc", weight: "740 grams", origin: "Việt Nam" }
+                },
+                en: {
+                    title: "Lãnh Mỹ A Heritage Silk & 24K Gold Embroidery: Festive Couture & Fabric Guide",
+                    excerpt: "Cool in summer and warm in winter, authentic ebony-dyed Vietnamese silk pairs effortlessly with modern jewelry.",
+                    specs: { material: "100% Natural Lãnh Mỹ A Mulberry Silk", gemstone: "24K Gold Thread & Silver Filigree", weight: "740 grams", origin: "Vietnam" }
+                }
+            },
+            {
+                id: 9,
+                category: "couture",
+                slug: "chon-vay-cuoi-hoang-gia-va-nhan-cuoi-dep",
+                seoTitleVi: "Cách Chọn Váy Cưới Tôn Dáng, Nhẫn Cưới Đẹp & Trang Sức Cưới",
+                seoDescVi: "Bí quyết chọn váy cưới tôn dáng cho từng vóc người kết hợp vương miện kim cương và bộ trang sức cưới thanh lịch.",
+                primaryKeyword: "nhẫn cưới đẹp, chọn váy cho người thấp, váy đẹp",
+                searchIntent: "Commercial & Informational",
+                image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85",
+                imageName: "chon-vay-cuoi-hoang-gia-va-nhan-cuoi-dep.webp",
+                priceValue: 520000,
+                priceDisplay: "$520,000",
+                hours: 1250,
+                atelier: "Paris & London",
+                vi: {
+                    title: "Vương Miện Kim Cương Kokoshnik & Lễ Phục Cưới Hoàng Gia: Bí Quyết Chọn Váy Tôn Dáng Ngày Trọng Đại",
+                    excerpt: "Phân tích tỷ lệ chiết eo cao giúp tôn chiều cao cho cô dâu nhỏ nhắn, độ rủ của lụa Mikado và cách phối đồng điệu cùng dây chuyền kim cương thanh lịch.",
+                    specs: { material: "Lụa Mikado Nhật Bản & Ren Chantilly Pháp", gemstone: "Vương miện Kim cương 62.5ct", weight: "2,600 grams", origin: "Paris & London" }
+                },
+                en: {
+                    title: "Diamond Kokoshnik Tiara & Royal Bridal Couture: Flattering Silhouette Guide",
+                    excerpt: "How high-waist proportions, Japanese Mikado silk, and delicate diamond necklaces elevate bridal silhouettes.",
+                    specs: { material: "Japanese Mikado Silk & Chantilly Lace", gemstone: "62.5ct Diamond Tiara", weight: "2,600 grams", origin: "Paris & London" }
+                }
+            },
+            {
+                id: 10,
+                category: "jewelry",
+                slug: "hoa-tai-hong-ngoc-huyet-bo-cau-mogok",
+                seoTitleVi: "Trang Sức Đá Quý Đỏ: Hoa Tai Hồng Ngọc Mogok & Dây Chuyền",
+                seoDescVi: "Khám phá đôi hoa tai đèn chùm Hồng ngọc huyết bồ câu Mogok 32.4ct và cách phối trang sức nổi bật cho tiệc tối.",
+                primaryKeyword: "trang sức nữ, phụ kiện ánh kim",
+                searchIntent: "Inspirational & Commercial",
+                image: "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?auto=format&fit=crop&w=1000&q=85",
+                imageName: "hoa-tai-hong-ngoc-huyet-bo-cau-mogok.webp",
+                priceValue: 14200000,
+                priceDisplay: "$14,200,000",
+                hours: 1380,
+                atelier: "Geneva, Thụy Sĩ",
+                vi: {
+                    title: "Đôi Hoa Tai Đèn Chùm Hồng Ngọc Huyết Bồ Câu Mogok 32.4 Carat & Quy Tắc Điểm Nhấn Khuôn Mặt",
+                    excerpt: "Sắc đỏ phát quang tự nhiên dưới tia cực tím của hồng ngọc Myanmar kết hợp nguyên tắc cân bằng giữa hoa tai bản lớn và dây chuyền mảnh tinh tế.",
+                    specs: { material: "Bạch kim Pt950 & Vàng 18K", gemstone: "Hồng ngọc Mogok 32.4ct không nung (SSEF)", weight: "36.8 grams", origin: "Thung lũng Mogok, Myanmar" }
+                },
+                en: {
+                    title: "32.4-Carat Pigeon's Blood Mogok Ruby Chandelier Earrings & Facial Framing Rules",
+                    excerpt: "Natural red fluorescence meets the styling rule of balancing statement earrings with delicate necklaces.",
+                    specs: { material: "Platinum Pt950 & 18K Gold", gemstone: "32.4ct Unheated Mogok Rubies", weight: "36.8 grams", origin: "Mogok Valley, Myanmar" }
+                }
+            },
+            {
+                id: 11,
+                category: "couture",
+                slug: "dam-lua-anh-kim-liquid-gold-tham-do",
+                seoTitleVi: "Đầm Dự Tiệc Ánh Kim Liquid Gold & Cách Phối Trang Sức Tối Giản",
+                seoDescVi: "Bí quyết diện đầm lụa ánh kim Liquid Gold tôn đường cong và cách kết hợp cùng trang sức tối giản, dây chuyền thanh lịch.",
+                primaryKeyword: "trang sức tối giản, mua đầm dự tiệc, cách phối đồ tôn dáng",
+                searchIntent: "Commercial & Informational",
+                image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85",
+                imageName: "dam-lua-anh-kim-liquid-gold-tham-do.webp",
+                priceValue: 210000,
+                priceDisplay: "$210,000",
+                hours: 580,
+                atelier: "Milan, Ý",
+                vi: {
+                    title: "Đầm Lụa Ánh Kim 'Liquid Gold' Cắt Xéo Bias-Cut: Công Thức Tôn Dáng Và Phối Trang Sức Tinh Tế",
+                    excerpt: "Kỹ thuật cắt vải xéo 45 độ giúp lụa Lame vàng kim ôm sát cơ thể tự nhiên mà không cần khóa kéo, kết hợp hoàn hảo cùng dây chuyền thanh lịch.",
+                    specs: { material: "Lụa tơ tằm dệt sợi vàng Lame", gemstone: "Viền pha lê Swarovski siêu mảnh", weight: "690 grams", origin: "Milan, Ý" }
+                },
+                en: {
+                    title: "'Liquid Gold' Bias-Cut Metallic Silk Gown: Silhouette & Minimalist Jewelry Pairing",
+                    excerpt: "Cut at a 45-degree angle, metallic silk drapes like liquid gold and pairs seamlessly with refined necklaces.",
+                    specs: { material: "Silk Lame Woven with Metallic Thread", gemstone: "Micro-crystal Trim", weight: "690 grams", origin: "Milan, Italy" }
+                }
+            },
+            {
+                id: 12,
+                category: "jewelry",
+                slug: "chuoi-ngoc-trai-vang-nam-hai-south-sea",
+                seoTitleVi: "Chuỗi Ngọc Trai Vàng Nam Hải & Cách Chọn Trang Sức Sang Trọng",
+                seoDescVi: "Khám phá chuỗi ngọc trai vàng South Sea 16mm quý hiếm và bí quyết phối dây chuyền nữ cùng áo sơ mi, blazer công sở.",
+                primaryKeyword: "dây chuyền vàng, trang sức nữ, thời trang công sở",
+                searchIntent: "Informational & Commercial",
+                image: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1000&q=85",
+                imageName: "chuoi-ngoc-trai-vang-nam-hai-south-sea.webp",
+                priceValue: 1850000,
+                priceDisplay: "$1,850,000",
+                hours: 420,
+                atelier: "Palawan & Tokyo",
+                vi: {
+                    title: "Chuỗi Ngọc Trai Vàng Nam Hải (Golden South Sea) 16mm: Mất 10 Năm Tuyển Chọn Cho Một Vòng Cổ",
+                    excerpt: "33 viên ngọc trai Pinctada Maxima sắc vàng sâm panh tự nhiên đồng đều tuyệt đối, mang lại vẻ quyền quý khi phối cùng áo sơ mi trắng hoặc blazer nữ.",
+                    specs: { material: "Khóa vàng 18K nạm kim cương", gemstone: "33 viên Ngọc trai South Sea 13–16mm", weight: "118.0 grams", origin: "Biển Nam Hải, Philippines" }
+                },
+                en: {
+                    title: "16mm Golden South Sea Pearl Strand: Ten Years of Curating a Single Necklace",
+                    excerpt: "33 naturally golden Pinctada Maxima pearls matched over a decade, elevating both evening wear and crisp white shirts.",
+                    specs: { material: "18K Diamond-Set Clasp", gemstone: "33 Golden South Sea Pearls (13–16mm)", weight: "118.0 grams", origin: "Palawan, Philippines" }
+                }
+            },
+            {
+                id: 13,
+                category: "jewelry",
+                slug: "hoa-phong-lan-titanium-da-paraiba-tourmaline",
+                seoTitleVi: "Trang Sức Hoa Phong Lan Paraiba & Dây Chuyền Mặt Hoa Nữ Tính",
+                seoDescVi: "Chiêm ngưỡng tuyệt tác hoa phong lan Titanium đính đá Paraiba xanh neon và khám phá các mẫu dây chuyền mặt hoa thanh lịch.",
+                primaryKeyword: "mặt dây chuyền, dây chuyền mặt hoa",
+                searchIntent: "Inspirational & Transactional",
+                image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=1000&q=85",
+                imageName: "hoa-phong-lan-titanium-da-paraiba-tourmaline.webp",
+                priceValue: 4100000,
+                priceDisplay: "$4,100,000",
+                hours: 1290,
+                atelier: "Geneva & Đài Bắc",
+                vi: {
+                    title: "Hoa Phong Lan Titanium & Đá Paraiba Tourmaline Brazil: Khi Trang Sức Mặt Hoa Nhẹ Tựa Cánh Bướm",
+                    excerpt: "Công nghệ anod hóa Titanium tạo sắc tím biếc siêu nhẹ chỉ 18 gram, nâng đỡ viên đá Paraiba Tourmaline xanh điện quang rực rỡ.",
+                    specs: { material: "Titanium y tế Anodized & Vàng trắng", gemstone: "Paraiba Tourmaline Brazil 16.4ct (GIA)", weight: "18.2 grams", origin: "Brazil & Thụy Sĩ" }
+                },
+                en: {
+                    title: "Anodized Titanium Orchid & Brazilian Paraiba Tourmaline: Featherlight Floral Jewelry",
+                    excerpt: "Weighing just 18 grams, anodized titanium petals cradle a neon-blue 16.4-carat Brazilian Paraiba tourmaline.",
+                    specs: { material: "Anodized Titanium & White Gold", gemstone: "16.4ct Brazilian Paraiba Tourmaline", weight: "18.2 grams", origin: "Brazil & Switzerland" }
+                }
+            },
+            {
+                id: 14,
+                category: "couture",
+                slug: "cach-phoi-do-cong-so-blazer-va-phu-kien-anh-kim",
+                seoTitleVi: "Cách Phối Áo Blazer, Sơ Mi Trắng Với Chân Váy & Trang Sức",
+                seoDescVi: "Hướng dẫn chi tiết cách phối áo sơ mi trắng, blazer với chân váy chữ A hoặc quần ống rộng kèm trang sức thanh lịch.",
+                primaryKeyword: "cách phối áo sơ mi trắng với chân váy chữ A, áo blazer nữ",
+                searchIntent: "Informational",
+                image: "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=1000&q=85",
+                imageName: "cach-phoi-do-cong-so-blazer-va-phu-kien-anh-kim.webp",
+                priceValue: 125000,
+                priceDisplay: "$125,000",
+                hours: 410,
+                atelier: "Mayfair, London",
+                vi: {
+                    title: "Nghệ Thuật Phối Áo Blazer, Sơ Mi Trắng Cùng Chân Váy & Điểm Nhấn Trang Sức Cho Phong Cách Thượng Lưu",
+                    excerpt: "Giải quyết triệt để bài toán chọn phom áo chống nhăn, tỷ lệ chân váy chữ A tôn vòng eo và cách kết hợp dây chuyền hay trâm cài tạo thần thái cuốn hút.",
+                    specs: { material: "Len Cashmere Loro Piana & Lụa Mulberry", gemstone: "Phụ kiện cài áo Kim cương & Bạch kim", weight: "540 grams", origin: "London & Milan" }
+                },
+                en: {
+                    title: "The Art of Styling Blazers, White Silk Shirts & A-Line Skirts with Fine Jewelry",
+                    excerpt: "Practical rules for wrinkle-resistant fabrics, waist-flattering proportions, and refined jewelry accents.",
+                    specs: { material: "Loro Piana Cashmere & Mulberry Silk", gemstone: "Diamond & Platinum Lapel Pin", weight: "540 grams", origin: "London & Milan" }
+                }
+            },
+
+            // --- 4 BÀI VIẾT VỀ SHOP ATD – STELLAR & 3 SẢN PHẨM ---
+            {
+                id: 15,
+                category: "jewelry",
+                slug: "gioi-thieu-thuong-hieu-trang-suc-atd-stellar",
+                seoTitleVi: "ATD – Stellar: Cửa Hàng Trang Sức Nữ & Dây Chuyền Tinh Tế",
+                seoDescVi: "Khám phá không gian trang sức nữ ATD – Stellar với các mẫu dây chuyền thanh lịch, quà tặng ý nghĩa và dịch vụ tận tâm.",
+                primaryKeyword: "ATD – Stellar, trang sức nữ, dây chuyền nữ",
+                searchIntent: "Informational & Transactional",
+                image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=85",
+                imageName: "gioi-thieu-thuong-hieu-trang-suc-atd-stellar.webp",
+                priceValue: 1650000,
+                priceDisplay: "ATD – Stellar Maison",
+                hours: 480,
+                atelier: "ATD – Stellar Boutique",
+                vi: {
+                    title: "ATD – Stellar: Điểm Hẹn Của Những Tuyệt Tác Dây Chuyền Nữ Thanh Lịch & Quà Tặng Cảm Xúc",
+                    excerpt: "Tìm hiểu triết lý thẩm mỹ của thương hiệu trang sức ATD – Stellar, nơi mỗi thiết kế dây chuyền được tuyển chọn kỹ lưỡng nhằm tôn vinh khí chất riêng của người phụ nữ hiện đại.",
+                    specs: { material: "Hợp kim cao cấp mạ ánh kim sáng bóng", gemstone: "Đá giác cắt chuẩn kim hoàn bắt sáng cao", weight: "Thiết kế thanh mảnh 4.5 – 6.5 grams", origin: "ATD – Stellar Official" }
+                },
+                en: {
+                    title: "ATD – Stellar: The Sanctuary of Elegant Women's Necklaces & Meaningful Gifts",
+                    excerpt: "Explore the aesthetic philosophy of ATD – Stellar, where every necklace is curated to celebrate modern feminine grace.",
+                    specs: { material: "High-Polish Luxury Plated Alloy", gemstone: "Precision-Cut Brilliant Stones", weight: "4.5 – 6.5 grams", origin: "ATD – Stellar Official" }
+                }
+            },
+            {
+                id: 16,
+                category: "jewelry",
+                slug: "day-chuyen-hoa-kim-cuong-atd-stellar",
+                seoTitleVi: "Dây Chuyền Hoa Kim Cương ATD – Stellar: Tôn Nét Nữ Tính",
+                seoDescVi: "Chiêm ngưỡng Dây chuyền Hoa Kim Cương tại ATD – Stellar và bí quyết phối dây chuyền mặt hoa cùng đầm dự tiệc, công sở.",
+                primaryKeyword: "Dây chuyền Hoa Kim Cương, dây chuyền mặt hoa",
+                searchIntent: "Commercial & Transactional",
+                image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=85",
+                imageName: "day-chuyen-hoa-kim-cuong-atd-stellar.webp",
+                priceValue: 1450000,
+                priceDisplay: "ATD – Stellar Signature",
+                hours: 340,
+                atelier: "ATD – Stellar Studio",
+                vi: {
+                    title: "Dây Chuyền Hoa Kim Cương ATD – Stellar: Vẻ Đẹp Tinh Khôi Tỏa Sáng Nơi Hõm Cổ Quý Cô",
+                    excerpt: "Lấy cảm hứng từ những cánh hoa bung nở đón nắng mai, Dây chuyền Hoa Kim Cương là lựa chọn hoàn hảo để phối cùng áo sơ mi cổ chữ V hoặc đầm dạo phố thanh lịch.",
+                    specs: { material: "Chất liệu ánh kim bền màu, an toàn với da", gemstone: "Mặt hoa đính đá lấp lánh đa góc phản chiếu", weight: "5.2 grams", origin: "ATD – Stellar Collection" }
+                },
+                en: {
+                    title: "ATD – Stellar Diamond Flower Necklace: Pure Floral Radiance on the Collarbone",
+                    excerpt: "Inspired by blooming petals in morning light, the Diamond Flower Necklace pairs effortlessly with V-neck blouses and evening dresses.",
+                    specs: { material: "Tarnish-Resistant Hypoallergenic Finish", gemstone: "Multi-Faceted Floral Stone Cluster", weight: "5.2 grams", origin: "ATD – Stellar Collection" }
+                }
+            },
+            {
+                id: 17,
+                category: "jewelry",
+                slug: "day-chuyen-trai-tim-hoang-gia-atd-stellar",
+                seoTitleVi: "Dây Chuyền Trái Tim Hoàng Gia ATD – Stellar: Quà Tình Yêu",
+                seoDescVi: "Chọn Dây chuyền Trái Tim Hoàng Gia ATD – Stellar làm quà tặng người yêu, quà kỷ niệm lãng mạn kèm cách bảo quản bền đẹp.",
+                primaryKeyword: "Dây chuyền Trái Tim Hoàng Gia, dây chuyền tặng người yêu",
+                searchIntent: "Commercial & Transactional",
+                image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85",
+                imageName: "day-chuyen-trai-tim-hoang-gia-atd-stellar.webp",
+                priceValue: 1520000,
+                priceDisplay: "ATD – Stellar Romance",
+                hours: 360,
+                atelier: "ATD – Stellar Studio",
+                vi: {
+                    title: "Dây Chuyền Trái Tim Hoàng Gia ATD – Stellar: Biểu Tượng Lãng Mạn Cho Món Quà Kỷ Niệm Tình Yêu",
+                    excerpt: "Thiết kế mặt trái tim kiêu sa được bao bọc bởi viền đá lấp lánh, giúp Dây chuyền Trái Tim Hoàng Gia thay lời nhắn gửi yêu thương chân thành trong các dịp sinh nhật và kỷ niệm.",
+                    specs: { material: "Hợp kim xi mạ ánh kim cao cấp", gemstone: "Đá chủ giác cắt Trái Tim viền đá tấm", weight: "5.6 grams", origin: "ATD – Stellar Collection" }
+                },
+                en: {
+                    title: "ATD – Stellar Royal Heart Necklace: The Ultimate Romantic Anniversary Gift",
+                    excerpt: "Featuring a regal heart-cut centerpiece framed by a shimmering halo, the Royal Heart Necklace speaks the language of devotion.",
+                    specs: { material: "Premium Luminous Plated Alloy", gemstone: "Heart-Cut Center Stone with Pavé Halo", weight: "5.6 grams", origin: "ATD – Stellar Collection" }
+                }
+            },
+            {
+                id: 18,
+                category: "jewelry",
+                slug: "day-chuyen-vu-dieu-anh-kim-va-giot-nang-atd-stellar",
+                seoTitleVi: "Dây Chuyền Vũ Điệu Ánh Kim & Giọt Nắng ATD – Stellar",
+                seoDescVi: "Tỏa sáng từ công sở đến tiệc tối cùng Dây chuyền Vũ Điệu Ánh Kim và Dây chuyền Giọt Nắng chính hãng tại ATD – Stellar.",
+                primaryKeyword: "Dây chuyền Vũ Điệu Ánh Kim, Dây chuyền Giọt Nắng",
+                searchIntent: "Commercial & Transactional",
+                image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=85",
+                imageName: "day-chuyen-vu-dieu-anh-kim-atd-stellar.webp",
+                priceValue: 1580000,
+                priceDisplay: "ATD – Stellar Edition",
+                hours: 390,
+                atelier: "ATD – Stellar Studio",
+                vi: {
+                    title: "Dây Chuyền Vũ Điệu Ánh Kim & Giọt Nắng ATD – Stellar: Bộ Đôi Hoàn Hảo Từ Tối Giản Đến Dạ Tiệc",
+                    excerpt: "Sự kết hợp giữa vẻ đẹp thanh thoát nhẹ nhàng của Dây chuyền Giọt Nắng và khả năng bắt sáng sống động của Dây chuyền Vũ Điệu Ánh Kim trong những đêm tiệc sang trọng.",
+                    specs: { material: "Bề mặt mạ ánh kim phản chiếu gương", gemstone: "Đá đính tinh xảo bắt sáng theo chuyển động", weight: "5.4 grams", origin: "ATD – Stellar Collection" }
+                },
+                en: {
+                    title: "ATD – Stellar Metallic Dance & Sunlit Drop Necklaces: Everyday to Gala Brilliance",
+                    excerpt: "Uniting the effortless minimalism of the Sunlit Drop Necklace with the evening sparkle of the Metallic Dance Necklace.",
+                    specs: { material: "Mirror-Polished Metallic Finish", gemstone: "Motion-Activated Light-Catching Stones", weight: "5.4 grams", origin: "ATD – Stellar Collection" }
+                }
+            }
+        ];
+
+        // 4. DỮ LIỆU LOOKBOOK PAIRING
+        const lookbookPairings = [
+            {
+                id: "p1",
+                nameVi: "01. Dạ Tiệc Hoàng Gia (Gala Cổ Chữ V & Lam Ngọc)",
+                nameEn: "01. Royal Gala (V-Neck Couture & Sapphire)",
+                jewelryId: 1,
+                coutureId: 2,
+                ruleVi: "Đầm dạ hội cổ chữ V sâu tạo khoảng trống hoàn hảo cho vòng cổ Rivière hoặc Dây chuyền Hoa Kim Cương ôm sát xương quai xanh, giúp kéo dài phần cổ thanh thoát.",
+                ruleEn: "A plunging V-neckline creates the ideal canvas for a collarbone-grazing Rivière or floral diamond necklace."
+            },
+            {
+                id: "p2",
+                nameVi: "02. Quiet Luxury Công Sở (Blazer & Ngọc Trai / Giọt Nắng)",
+                nameEn: "02. Executive Quiet Luxury (Blazer & Golden Pearl)",
+                jewelryId: 12,
+                coutureId: 14,
+                ruleVi: "Khi diện áo sơ mi trắng mở cúc cổ trên kết hợp áo blazer nữ và chân váy chữ A, một chuỗi ngọc trai hoặc Dây chuyền Giọt Nắng mảnh sẽ làm mềm đường cắt may sắc sảo.",
+                ruleEn: "Pairing an open-collar silk shirt and structured blazer with a sunlit pendant softens sharp tailoring."
+            },
+            {
+                id: "p3",
+                nameVi: "03. Thảm Đỏ Ánh Kim (Đầm Liquid Gold & Hồng Ngọc)",
+                nameEn: "03. Red Carpet Metallic (Liquid Gold & Mogok Ruby)",
+                jewelryId: 10,
+                coutureId: 11,
+                ruleVi: "Trang phục lụa cắt xéo ánh kim tỏa sáng rực rỡ nhất khi kết hợp cùng sắc đỏ huyết bồ câu hoặc Dây chuyền Vũ Điệu Ánh Kim đồng điệu.",
+                ruleEn: "Bias-cut metallic silk harmonizes effortlessly with pigeon's blood rubies or metallic pendant accents."
+            }
+        ];
+
+        // 5. BIẾN TRẠNG THÁI TOÀN CỤC
+        let currentLang = 'vi';
+        let currentCategory = 'all';
+        let currentSort = 'newest';
+        let currentSearch = '';
+        let wishlist = JSON.parse(localStorage.getItem('leclat_wishlist') || '[]');
+        let currentFontScale = 0;
+        let activePairingId = 'p1';
+        let currentOpenArticleId = null;
+
+        // 6. CƠ CHẾ DỰ PHÒNG ẢNH
+        function handleLuxuryImageError(imgEl, titleText) {
+            imgEl.onerror = null;
+            const safeTitle = (titleText || "L'ÉCLAT HAUTE JOAILLERIE").replace(/"/g, '&quot;').substring(0, 42);
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+                <defs>
+                    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#141418"/>
+                        <stop offset="50%" stop-color="#1F1D1A"/>
+                        <stop offset="100%" stop-color="#0C0C0E"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="600" fill="url(#bg)"/>
+                <rect x="30" y="30" width="740" height="540" fill="none" stroke="#B89146" stroke-width="1.5" stroke-opacity="0.45"/>
+                <polygon points="400,170 465,245 400,365 335,245" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                <polygon points="335,245 465,245 435,205 365,205" fill="rgba(212,175,55,0.15)" stroke="#D4AF37" stroke-width="1.2"/>
+                <text x="400" y="430" text-anchor="middle" fill="#D4AF37" font-family="Georgia, serif" font-size="22" letter-spacing="6">L'ÉCLAT PARIS • GENEVA</text>
+                <text x="400" y="468" text-anchor="middle" fill="#E6D5B8" font-family="sans-serif" font-size="14">${safeTitle}</text>
+            </svg>`;
+            imgEl.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+        }
+
+        // 7. HÀM DỰNG NỘI DUNG BÀI VIẾT BÁO CHÍ SANG TRỌNG, THÂN THIỆN NGƯỜI ĐỌC
+        function generateFullSeoArticleHTML(article) {
+            const t = article[currentLang];
+            const relatedArticles = articlesData.filter(a => a.id !== article.id && a.category === article.category).slice(0, 3);
+            const currentIndex = articlesData.findIndex(a => a.id === article.id);
+            const prevArt = articlesData[(currentIndex - 1 + articlesData.length) % articlesData.length];
+            const nextArt = articlesData[(currentIndex + 1) % articlesData.length];
+
+            const dossierCard = `
+                <div class="my-8 p-5 sm:p-6 rounded-2xl bg-pearl/50 dark:bg-charcoal/80 border luxury-border">
+                    <div class="text-[11px] font-bold uppercase tracking-[0.2em] text-gold mb-3">HỒ SƠ CHẾ TÁC ĐỘC BẢN • MAISON DOSSIER</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm">
+                        <div>
+                            <span class="text-stone-500 block mb-0.5">Chất liệu chủ đạo</span>
+                            <span class="font-semibold">${t.specs.material}</span>
+                        </div>
+                        <div>
+                            <span class="text-stone-500 block mb-0.5">Đá quý / Chi tiết</span>
+                            <span class="font-semibold">${t.specs.gemstone}</span>
+                        </div>
+                        <div>
+                            <span class="text-stone-500 block mb-0.5">Trọng lượng & Kích cỡ</span>
+                            <span class="font-semibold">${t.specs.weight}</span>
+                        </div>
+                        <div>
+                            <span class="text-stone-500 block mb-0.5">Xuất xứ & Định giá</span>
+                            <span class="font-serif font-bold text-gold">${article.priceDisplay}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const prevNextNav = `
+                <div class="mt-10 pt-6 border-t luxury-border grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <button onclick="openArticleModal(${prevArt.id})" class="text-left p-4 rounded-xl border luxury-border hover:border-gold transition-all group">
+                        <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">← Bài viết trước</span>
+                        <span class="font-serif font-bold text-sm group-hover:text-gold transition-colors line-clamp-1">${prevArt[currentLang].title}</span>
+                    </button>
+                    <button onclick="openArticleModal(${nextArt.id})" class="text-left sm:text-right p-4 rounded-xl border luxury-border hover:border-gold transition-all group">
+                        <span class="text-[10px] uppercase tracking-widest text-stone-400 block mb-1">Bài viết tiếp theo →</span>
+                        <span class="font-serif font-bold text-sm group-hover:text-gold transition-colors line-clamp-1">${nextArt[currentLang].title}</span>
+                    </button>
+                </div>
+            `;
+
+            // A. BÀI VIẾT LĨNH VỰC TRANG PHỤC
+            if (article.category === 'couture') {
+                return `
+                    <div class="p-5 sm:p-6 rounded-xl bg-pearl/70 dark:bg-charcoal border-l-4 border-gold mb-6 text-base sm:text-lg leading-relaxed font-medium">
+                        Nghệ thuật lựa chọn <strong>${article.primaryKeyword.split(',')[0]}</strong> luôn là tâm điểm của những quý cô yêu thích vẻ đẹp thanh lịch và phong thái thượng lưu. Tuy nhiên, thách thức lớn nhất khi đứng trước những thiết kế cao cấp hay lựa chọn trang phục trực tuyến chính là sự cân đối của phom dáng theo từng cơ thể, cảm giác thoáng mát của thớ vải và nghệ thuật điểm xuyết phụ kiện sao cho tinh tế. Cùng <strong>L'ÉCLAT</strong> khám phá chiều sâu chế tác đằng sau tuyệt phẩm <em>${t.title}</em> (${article.hours} giờ hoàn thiện thủ công tại ${article.atelier}), bảng đánh giá cảm quan chất liệu thực tế và những công thức phối đồ tôn dáng chuẩn mực.
+                    </div>
+
+                    <nav class="mb-8 p-4 sm:p-5 rounded-xl bg-ivory dark:bg-obsidian border luxury-border">
+                        <div class="text-xs font-bold uppercase tracking-widest text-gold mb-2.5">Mục Lục Bài Viết Nhanh</div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
+                            <a href="#sec-couture-1" onclick="scrollToSection('sec-couture-1', event)" class="hover:text-gold transition-colors">1. Giá trị phom dáng & cảm hứng chế tác</a>
+                            <a href="#sec-couture-2" onclick="scrollToSection('sec-couture-2', event)" class="hover:text-gold transition-colors">2. Công thức phối đồ (Mix & Match) tôn dáng</a>
+                            <a href="#sec-couture-3" onclick="scrollToSection('sec-couture-3', event)" class="hover:text-gold transition-colors">3. Cảm quan chất liệu & Bảng chọn kích cỡ</a>
+                            <a href="#sec-couture-4" onclick="scrollToSection('sec-couture-4', event)" class="hover:text-gold transition-colors">4. Bí quyết kết hợp phụ kiện & trang sức</a>
+                            <a href="#sec-couture-5" onclick="scrollToSection('sec-couture-5', event)" class="hover:text-gold transition-colors">5. Những lưu ý giúp tổng thể luôn sang trọng</a>
+                            <a href="#sec-couture-6" onclick="scrollToSection('sec-couture-6', event)" class="hover:text-gold transition-colors">6. Lời kết & Các chuyên khảo cùng chủ đề</a>
+                        </div>
+                    </nav>
+
+                    ${dossierCard}
+
+                    <h2 id="sec-couture-1" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">1. Vì Sao Thiết Kế & Xu Hướng Trang Phục Này Được Giới Thượng Lưu Yêu Thích?</h2>
+                    <p class="mb-4 leading-relaxed drop-cap">
+                        Trong thế giới thời trang cao cấp (Haute Couture & Bespoke Savoir-Faire), một bộ trang phục đắt giá không nằm ở những biểu tượng phô trương mà ở cấu trúc phom dáng (silhouette), sự thoải mái tuyệt đối khi chuyển động và tính ứng dụng vượt thời gian. Tác phẩm <strong>${t.title}</strong> được hoàn thiện qua <strong>${article.hours} giờ lao động thủ công</strong> tại ${article.atelier} là minh chứng rõ nét cho triết lý đó.
+                    </p>
+                    <p class="mb-6 leading-relaxed">
+                        Người mặc tinh tế ngày nay không chỉ tìm kiếm một thiết kế lộng lẫy trên sàn diễn mà cần những nguyên tắc thẩm mỹ có thể ứng dụng trực tiếp vào tủ đồ cá nhân: làm sao để tôn vòng eo thon gọn, kéo dài tỷ lệ đôi chân và giữ được vẻ chỉn chu, phẳng phiu suốt cả ngày dài làm việc hay trong suốt buổi dạ tiệc tối.
+                    </p>
+
+                    <h2 id="sec-couture-2" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">2. Công Thức Phối Đồ (Mix & Match) Chuẩn Tỷ Lệ Tôn Dáng</h2>
+                    <p class="mb-5 leading-relaxed">
+                        Để phát huy tối đa vẻ đẹp của trang phục trong từng hoàn cảnh xuất hiện, dưới đây là 4 nguyên tắc phối hợp theo màu sắc, chất liệu và tỷ lệ cơ thể:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                        <div class="p-5 rounded-xl luxury-card">
+                            <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.1. Phối theo nguyên tắc tương phản chất liệu & phom dáng</h3>
+                            <p class="text-sm leading-relaxed">
+                                Kết hợp bề mặt ${t.specs.material} cùng các thiết kế có độ đứng phom vừa phải. Nếu phần thân trên đã có chi tiết thêu hoặc cấu trúc vai sắc nét, hãy ưu tiên phần thân dưới suông mượt hoặc chân váy chữ A cạp cao để tạo tỷ lệ 1/3 – 2/3 giúp vóc dáng thanh thoát hơn.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl luxury-card">
+                            <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.2. Phối đồ thanh lịch cho môi trường công sở & gặp gỡ đối tác</h3>
+                            <p class="text-sm leading-relaxed">
+                                Ứng dụng tinh thần <em>Quiet Luxury</em> bằng bảng màu trung tính (trắng ngà Ivory, đen Obsidian, nâu lạc đà hoặc xanh Navy). Khi phối áo sơ mi trắng cùng chân váy chữ A hoặc quần âu ống rộng, hãy sơ vin gọn gàng và mở nhẹ một cúc cổ trên để tạo khoảng thở tự nhiên.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl luxury-card">
+                            <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.3. Phối đồ theo mùa (Thu Đông ấm áp & Xuân Hè thoáng mát)</h3>
+                            <p class="text-sm leading-relaxed">
+                                Vào mùa thu đông, áp dụng kỹ thuật mặc nhiều lớp (layering) mỏng nhẹ từ sợi tự nhiên thay vì một lớp áo dày cồng kềnh. Vào mùa xuân hè hoặc dịp lễ Tết, ưu tiên lụa tơ tằm tự nhiên có khả năng điều hòa thân nhiệt.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-xl luxury-card">
+                            <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.4. Phối đồ dự tiệc tối sang trọng & thảm đỏ</h3>
+                            <p class="text-sm leading-relaxed">
+                                Với đầm dự tiệc cắt xéo (bias-cut) hoặc lễ phục thêu tay, hãy tiết chế phụ kiện rườm rà. Giày cao gót mũi nhọn cùng tông màu da hoặc ánh kim mảnh sẽ giúp kéo dài đôi chân mà không làm phân tán sự chú ý khỏi đường cắt may của trang phục.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 id="sec-couture-3" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">3. Cảm Quan Chất Liệu Thực Tế & Cẩm Nang Chọn Kích Cỡ Vừa Vặn</h2>
+                    <p class="mb-4 leading-relaxed">
+                        Nhằm giúp quý độc giả hình dung rõ nét độ rủ, độ thoáng khí cũng như cách chọn kích cỡ chuẩn xác cho từng vóc dáng, bảng thông số dưới đây tổng hợp các tiêu chí kỹ thuật quan trọng nhất:
+                    </p>
+
+                    <div class="overflow-x-auto mb-8 rounded-xl border luxury-border">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-pearl dark:bg-charcoal text-gold uppercase tracking-wider">
+                                <tr>
+                                    <th class="p-3.5 border-b luxury-border">Tiêu chí cảm quan</th>
+                                    <th class="p-3.5 border-b luxury-border">Đặc tính thực tế của chất liệu</th>
+                                    <th class="p-3.5 border-b luxury-border">Tư vấn theo dáng người</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y luxury-border">
+                                <tr>
+                                    <td class="p-3.5 font-semibold">1. Chất liệu & Cảm giác mặc</td>
+                                    <td class="p-3.5">${t.specs.material} — bề mặt mềm mịn tự nhiên, thoáng khí, thấm hút mồ hôi tốt, êm dịu với làn da nhạy cảm.</td>
+                                    <td class="p-3.5">Thoải mái diện suốt ngày dài hoặc trong không gian dạ tiệc.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3.5 font-semibold">2. Độ co giãn & Khả năng chống nhăn</td>
+                                    <td class="p-3.5">Độ đàn hồi tự nhiên theo thớ dệt chéo; hạn chế nếp gấp tối đa khi ngồi lâu hoặc di chuyển xa.</td>
+                                    <td class="p-3.5">Giữ phom đứng dáng cho cả người mảnh mai lẫn người có vòng eo đầy đặn.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3.5 font-semibold">3. Phom dáng (Fit) & Tỷ lệ</td>
+                                    <td class="p-3.5">Thiết kế chiết eo cao hơn eo tự nhiên 2cm giúp tạo hiệu ứng đôi chân thon dài.</td>
+                                    <td class="p-3.5">Đặc biệt tôn dáng cho cả quý cô nhỏ nhắn (1m52 – 1m60) lẫn dáng cao.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3.5 font-semibold">4. Hướng dẫn chọn Size chuẩn</td>
+                                    <td class="p-3.5">Đo sát vòng ngực, vòng eo nhỏ nhất (trên rốn 3cm) và vòng hông; đối chiếu bảng thông số chuẩn.</td>
+                                    <td class="p-3.5">Nếu số đo nằm giữa 2 size, ưu tiên chọn size lớn hơn để tinh chỉnh vừa vặn.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="sec-couture-4" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">4. Bí Quyết Kết Hợp Phụ Kiện & Trang Sức Hoàn Thiện Tổng Thể</h2>
+                    <p class="mb-4 leading-relaxed">
+                        Một bộ trang phục hoàn hảo không thể thiếu sự đồng điệu của giày, túi xách và đặc biệt là trang sức vùng cổ. Bên cạnh trang phục, một thiết kế dây chuyền phù hợp cũng có thể tạo điểm nhấn đắt giá cho tổng thể diện mạo. Bạn có thể tham khảo bộ sưu tập trang sức tại <a href="${ATD_STELLAR_URLS.home.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold hover:opacity-80">ATD – Stellar</a> hoặc khám phá trực tiếp danh mục tại <a href="${ATD_STELLAR_URLS.shop.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold hover:opacity-80">cửa hàng trang sức ATD – Stellar</a> để tìm cảm hứng phối phụ kiện chuẩn mực:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2.5 mb-8 text-sm sm:text-base">
+                        <li><strong>Khi diện đầm nữ tính hoặc áo cổ chữ V thanh lịch:</strong> Kết hợp cùng <a href="${ATD_STELLAR_URLS.hoaKimCuong.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.hoaKimCuong.titleVi}</a> hoặc <a href="${ATD_STELLAR_URLS.giotNang.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.giotNang.titleVi}</a> để tôn lên đường nét mềm mại nơi xương quai xanh.</li>
+                        <li><strong>Khi diện trang phục dạ tiệc tối hoặc đầm lụa ánh kim:</strong> Tạo điểm nhấn bắt sáng cuốn hút với thiết kế <a href="${ATD_STELLAR_URLS.vuDieuAnhKim.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.vuDieuAnhKim.titleVi}</a> hoặc món quà kỷ niệm <a href="${ATD_STELLAR_URLS.traiTimHoangGia.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.traiTimHoangGia.titleVi}</a>.</li>
+                    </ul>
+
+                    <h2 id="sec-couture-5" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">5. Những Lỗi Thường Gặp Khi Phối Trang Phục Và Cách Khắc Phục</h2>
+                    <p class="mb-6 leading-relaxed">
+                        Ba sai lầm phổ biến nhất khiến trang phục mất đi vẻ sang trọng gồm: (1) Chọn chiều dài quần hoặc váy cắt ngang bắp chân làm lộ nhược điểm chiều cao; (2) Kết hợp quá 3 tông màu rực rỡ trên cùng một tổng thể khiến trang phục rối mắt; và (3) Đeo dây chuyền có độ dài chạm đúng đường viền cổ áo gây cảm giác chồng chéo. Hãy luôn giữ khoảng cách tối thiểu 2–3cm giữa mặt dây chuyền và mép vải cổ áo.
+                    </p>
+
+                    <h2 id="sec-couture-6" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">6. Lời Kết & Gợi Ý Phong Cách Từ L'ÉCLAT</h2>
+                    <p class="mb-6 leading-relaxed">
+                        Hiểu rõ đặc tính chất liệu, nắm vững tỷ lệ cơ thể và biết cách tiết chế phụ kiện chính là chìa khóa giúp bạn làm chủ mọi phong cách từ công sở đến dạ tiệc thượng lưu. Khám phá thêm các chuyên khảo thời trang cùng chủ đề trên <strong>L'ÉCLAT</strong> dưới đây:
+                    </p>
+
+                    <div class="p-5 rounded-xl bg-pearl/60 dark:bg-charcoal border luxury-border mb-6">
+                        <div class="text-xs font-bold uppercase tracking-wider text-gold mb-3">CÁC CHUYÊN KHẢO CÙNG CHỦ ĐỀ TRÊN L'ÉCLAT:</div>
+                        <ul class="space-y-2 text-sm">
+                            ${relatedArticles.map(rel => `
+                                <li>• <a href="#/bai-viet/${rel.slug}" onclick="openArticleModal(${rel.id}); return false;" class="text-gold hover:underline font-medium">${rel[currentLang].title}</a></li>
+                            `).join('')}
+                        </ul>
+                        <div class="text-xs text-stone-500 mt-4 pt-3 border-t luxury-border">
+                            <strong>Tư liệu tham khảo:</strong> Fédération de la Haute Couture et de la Mode (Paris) & The Woolmark Company Luxury Fiber Standards.
+                        </div>
+                    </div>
+
+                    ${prevNextNav}
+                `;
+            }
+
+            // B. BÀI VIẾT LĨNH VỰC TRANG SỨC
+            return `
+                <div class="p-5 sm:p-6 rounded-xl bg-pearl/70 dark:bg-charcoal border-l-4 border-gold mb-6 text-base sm:text-lg leading-relaxed font-medium">
+                    Mỗi món <strong>${article.primaryKeyword.split(',')[0]}</strong> không chỉ là một tác phẩm kim hoàn lấp lánh mà còn là kỷ vật lưu giữ tình yêu, sự trân trọng và dấu ấn cá nhân của người sở hữu. Thế nhưng, đứng trước hàng trăm kiểu dáng từ mặt dây chuyền trái tim, họa tiết hoa cho đến trang sức tối giản tại các thương hiệu như <a href="${ATD_STELLAR_URLS.home.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold hover:opacity-80">ATD – Stellar</a>, rất nhiều người băn khoăn làm sao chọn được món quà tặng thực sự phù hợp với phong cách người nhận, đồng thời đảm bảo sự minh bạch về chất liệu và kiểm định. Cùng <strong>L'ÉCLAT</strong> khám phá câu chuyện chế tác đằng sau tuyệt tác <em>${t.title}</em> (${article.hours} giờ hoàn thiện tại ${article.atelier}), kèm cẩm nang chọn dây chuyền theo dáng cổ áo và bí quyết bảo quản trang sức bền đẹp theo năm tháng.
+                </div>
+
+                <nav class="mb-8 p-4 sm:p-5 rounded-xl bg-ivory dark:bg-obsidian border luxury-border">
+                    <div class="text-xs font-bold uppercase tracking-widest text-gold mb-2.5">Mục Lục Bài Viết Nhanh</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
+                        <a href="#sec-jewel-1" onclick="scrollToSection('sec-jewel-1', event)" class="hover:text-gold transition-colors">1. Câu chuyện cảm xúc & Ý nghĩa biểu tượng</a>
+                        <a href="#sec-jewel-2" onclick="scrollToSection('sec-jewel-2', event)" class="hover:text-gold transition-colors">2. Các kiểu thiết kế dây chuyền được yêu thích</a>
+                        <a href="#sec-jewel-3" onclick="scrollToSection('sec-jewel-3', event)" class="hover:text-gold transition-colors">3. Quy tắc chọn dây chuyền theo dáng cổ áo</a>
+                        <a href="#sec-jewel-4" onclick="scrollToSection('sec-jewel-4', event)" class="hover:text-gold transition-colors">4. Tiêu chuẩn chất liệu, kiểm định & văn hóa</a>
+                        <a href="#sec-jewel-5" onclick="scrollToSection('sec-jewel-5', event)" class="hover:text-gold transition-colors">5. Bí quyết bảo quản trang sức luôn sáng bóng</a>
+                        <a href="#sec-jewel-6" onclick="scrollToSection('sec-jewel-6', event)" class="hover:text-gold transition-colors">6. Lời kết & Các tuyệt tác liên quan</a>
+                    </div>
+                </nav>
+
+                ${dossierCard}
+
+                <h2 id="sec-jewel-1" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">1. Vì Sao Trang Sức & Dây Chuyền Là Món Quà Mang Ý Nghĩa Tình Cảm Sâu Sắc?</h2>
+                <p class="mb-4 leading-relaxed drop-cap">
+                    Khác với những món quà hữu hình dễ phai nhạt theo năm tháng, trang sức luôn nằm ở vị trí gần trái tim nhất. Trong lịch sử kim hoàn tại ${article.atelier}, tác phẩm <strong>${t.title}</strong> sử dụng ${t.specs.gemstone} trên nền ${t.specs.material} được chế tác ròng rã suốt <strong>${article.hours} giờ</strong> nhằm tôn vinh giá trị thẩm mỹ vĩnh cửu và cảm xúc kết nối giữa người trao và người nhận.
+                </p>
+                <p class="mb-6 leading-relaxed">
+                    Dù là món quà kỷ niệm tình yêu, quà tặng sinh nhật tinh tế hay trang sức tặng mẹ, giá trị lớn nhất của một sợi dây chuyền nằm ở thông điệp tinh thần: sự hiện diện bền bỉ, lòng biết ơn và lời chúc bình an gắn liền với phong cách sống của người phụ nữ. Khi tham khảo các bộ sưu tập tại <a href="${ATD_STELLAR_URLS.shop.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold hover:opacity-80">cửa hàng trang sức ATD – Stellar</a>, người mua có thể dễ dàng tìm thấy những thiết kế truyền tải trọn vẹn thông điệp yêu thương đó.
+                </p>
+
+                <h2 id="sec-jewel-2" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">2. Phân Tích Các Kiểu Thiết Kế Trang Sức & Dây Chuyền Được Yêu Thích Nhất</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                    <div class="p-5 rounded-xl luxury-card">
+                        <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.1. Dây chuyền biểu tượng trái tim & kỷ niệm tình yêu</h3>
+                        <p class="text-sm leading-relaxed">
+                            Thiết kế mặt trái tim như mẫu <a href="${ATD_STELLAR_URLS.traiTimHoangGia.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.traiTimHoangGia.titleVi}</a> mang thông điệp lãng mạn trực diện, là lựa chọn hàng đầu cho dịp kỷ niệm ngày cưới, Valentine hoặc sinh nhật người yêu.
+                        </p>
+                    </div>
+                    <div class="p-5 rounded-xl luxury-card">
+                        <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.2. Dây chuyền họa tiết hoa lá thiên nhiên</h3>
+                        <p class="text-sm leading-relaxed">
+                            Lấy cảm hứng từ những cánh hoa nở rộ, thiết kế <a href="${ATD_STELLAR_URLS.hoaKimCuong.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.hoaKimCuong.titleVi}</a> tôn vinh vẻ đẹp nữ tính, dịu dàng và rất dễ phối cùng đầm dạo phố lẫn trang phục công sở.
+                        </p>
+                    </div>
+                    <div class="p-5 rounded-xl luxury-card">
+                        <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.3. Trang sức phong cách tối giản (Minimalist Giọt Nắng)</h3>
+                        <p class="text-sm leading-relaxed">
+                            Mặt dây chuyền giọt nước thanh mảnh như <a href="${ATD_STELLAR_URLS.giotNang.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.giotNang.titleVi}</a> giúp bắt sáng nhẹ nhàng nơi hõm cổ, phù hợp để đeo hàng ngày mà không gây vướng víu.
+                        </p>
+                    </div>
+                    <div class="p-5 rounded-xl luxury-card">
+                        <h3 class="font-serif text-lg font-bold mb-2 text-gold">2.4. Trang sức ánh kim dự tiệc tối (Statement & Metallic)</h3>
+                        <p class="text-sm leading-relaxed">
+                            Sử dụng kỹ thuật đính đá đa tầng hoặc cấu trúc chuyển động bắt sáng mạnh dưới ánh đèn buổi tối như <a href="${ATD_STELLAR_URLS.vuDieuAnhKim.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.vuDieuAnhKim.titleVi}</a>, giúp người đeo trở thành tâm điểm của những sự kiện trang trọng.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 id="sec-jewel-3" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">3. Cách Chọn Dây Chuyền Theo Dáng Cổ Áo Và Phong Cách Cá Nhân</h2>
+                <p class="mb-4 leading-relaxed">
+                    Để chọn được món trang sức tôn dáng nhất, người mua cần chú ý sự tương thích giữa độ dài dây chuyền và kiểu cổ áo thường mặc:
+                </p>
+                <ul class="list-disc pl-6 space-y-2.5 mb-8 text-sm sm:text-base">
+                    <li><strong>Cách phối dây chuyền với cổ áo chữ V hoặc sơ mi mở cúc:</strong> Ưu tiên dây chuyền dài 40–45cm (dáng Princess) có mặt dây hình giọt nước như <a href="${ATD_STELLAR_URLS.giotNang.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.giotNang.titleVi}</a>, mặt trái tim hoặc <a href="${ATD_STELLAR_URLS.hoaKimCuong.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.hoaKimCuong.titleVi}</a> rơi nhẹ vào chính giữa chữ V để tạo hiệu ứng cổ cao thanh thoát.</li>
+                    <li><strong>Với đầm quây (Strapless) hoặc cổ trễ vai:</strong> Phù hợp với vòng cổ ôm sát xương quai xanh (35–40cm), thiết kế Rivière hoặc <a href="${ATD_STELLAR_URLS.vuDieuAnhKim.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">${ATD_STELLAR_URLS.vuDieuAnhKim.titleVi}</a> để lấp đầy khoảng trống phần ngực trên.</li>
+                    <li><strong>Với áo cổ lọ hoặc cổ tròn cao:</strong> Chọn dây chuyền dáng dài 50–60cm hoặc kết hợp hoa tai, trâm cài áo để tạo điểm nhấn cân đối.</li>
+                </ul>
+
+                <h2 id="sec-jewel-4" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">4. Những Yếu Tố Cần Kiểm Tra Trước Khi Mua & Góc Nhìn Văn Hóa</h2>
+                <p class="mb-4 leading-relaxed">
+                    Đối với trang sức giá trị cao, sự minh bạch của thông tin sản phẩm là yếu tố tiên quyết. Trước khi quyết định lựa chọn, người thưởng lãm cần lưu ý các tiêu chuẩn sau:
+                </p>
+                <div class="overflow-x-auto mb-6 rounded-xl border luxury-border">
+                    <table class="w-full text-left text-xs sm:text-sm">
+                        <thead class="bg-pearl dark:bg-charcoal text-gold uppercase tracking-wider">
+                            <tr>
+                                <th class="p-3.5 border-b luxury-border">Hạng mục xác minh</th>
+                                <th class="p-3.5 border-b luxury-border">Thông số tác phẩm tham chiếu</th>
+                                <th class="p-3.5 border-b luxury-border">Lưu ý chuẩn mực kiểm định</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y luxury-border">
+                            <tr>
+                                <td class="p-3.5 font-semibold">Chất liệu & Độ tinh khiết kim loại</td>
+                                <td class="p-3.5">${t.specs.material} (Trọng lượng: ${t.specs.weight})</td>
+                                <td class="p-3.5">Kiểm tra dấu khắc hàm lượng kim loại (Pt950, Au750/18K, S925) và thông tin chất liệu minh bạch từ <a href="${ATD_STELLAR_URLS.home.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold">ATD – Stellar</a>.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 font-semibold">Đá quý & Cơ quan kiểm định</td>
+                                <td class="p-3.5">${t.specs.gemstone} — Xuất xứ: ${t.specs.origin}</td>
+                                <td class="p-3.5">Phân biệt rõ phạm vi kiểm định: GIA (Kim cương & Đá màu quốc tế), SSEF/Gübelin (Đá quý hiếm Thụy Sĩ), DOJI/SJC (Vàng bạc đá quý tại Việt Nam). Chỉ công nhận khi có chứng thư thực tế đi kèm.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3.5 font-semibold">Ý nghĩa biểu tượng & Phong thủy</td>
+                                <td class="p-3.5">Mang giá trị tinh thần, niềm vui thẩm mỹ và biểu tượng văn hóa tốt đẹp.</td>
+                                <td class="p-3.5">Trân trọng quan niệm văn hóa nhưng tách biệt rõ với khẳng định khoa học; không tin vào các cam kết thay đổi vận mệnh hay chữa bệnh thiếu căn cứ.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="sec-jewel-5" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">5. Cách Bảo Quản Trang Sức Bạc, Vàng Và Đá Quý Không Bị Xỉn Màu</h2>
+                <p class="mb-6 leading-relaxed">
+                    Để giữ trang sức luôn lấp lánh như ngày đầu: (1) Áp dụng quy tắc <em>"Đeo sau cùng, tháo đầu tiên"</em> — chỉ đeo trang sức sau khi đã xịt nước hoa, dùng mỹ phẩm và keo xịt tóc; (2) Sau mỗi lần sử dụng, dùng khăn sợi nhỏ (microfiber) mềm lau nhẹ mồ hôi bám trên bề mặt dây chuyền; (3) Cất từng món vào ngăn hộp lót nhung riêng biệt hoặc túi zip kín khí để tránh ma sát trầy xước và hạn chế quá trình oxy hóa tự nhiên của kim loại.
+                </p>
+
+                <h2 id="sec-jewel-6" class="font-serif text-2xl sm:text-3xl font-bold mt-10 mb-4 text-gold scroll-mt-20">6. Lời Kết & Khám Phá Thêm Trên Tạp Chí L'ÉCLAT</h2>
+                <p class="mb-5 leading-relaxed">
+                    Sự kết hợp giữa câu chuyện cảm xúc, kiểu dáng hài hòa với trang phục và sự minh bạch về chất liệu tại <a href="${ATD_STELLAR_URLS.shop.url}" target="_blank" rel="noopener" class="text-gold underline font-semibold hover:opacity-80">cửa hàng trang sức ATD – Stellar</a> chính là chuẩn mực của nghệ thuật thưởng lãm trang sức hiện đại. Mời bạn đọc tiếp các chuyên khảo liên quan trong hệ thống tạp chí <strong>L'ÉCLAT</strong>:
+                </p>
+                <div class="p-5 rounded-xl bg-pearl/60 dark:bg-charcoal border luxury-border mb-6">
+                    <div class="text-xs font-bold uppercase tracking-wider text-gold mb-3">CÁC TUYỆT TÁC CÙNG CHUYÊN MỤC TRÊN L'ÉCLAT:</div>
+                    <ul class="space-y-2 text-sm">
+                        ${relatedArticles.map(rel => `
+                            <li>• <a href="#/bai-viet/${rel.slug}" onclick="openArticleModal(${rel.id}); return false;" class="text-gold hover:underline font-medium">${rel[currentLang].title}</a></li>
+                        `).join('')}
+                    </ul>
+                    <div class="text-xs text-stone-500 mt-4 pt-3 border-t luxury-border">
+                        <strong>Tư liệu tham khảo:</strong> Gemological Institute of America (GIA) & Swiss Gemmological Institute (SSEF) Standards.
+                    </div>
+                </div>
+
+                ${prevNextNav}
+            `;
+        }
+
+        // 8. ĐỒNG BỘ SEO META, CANONICAL & SCHEMA.ORG NGẦM TRONG <HEAD>
+        function updateDynamicSEO(article = null) {
+            const baseOrigin = window.location.origin && window.location.origin !== 'null'
+                ? window.location.origin + window.location.pathname
+                : 'https://leclat-magazine.github.io/';
+
+            const titleEl = document.getElementById('seo-title-tag');
+            const descEl = document.getElementById('seo-meta-desc');
+            const canonEl = document.getElementById('seo-canonical');
+
+            if (article) {
+                titleEl.textContent = article.seoTitleVi.substring(0, 59);
+                descEl.setAttribute('content', article.seoDescVi.substring(0, 118));
+                canonEl.setAttribute('href', `${baseOrigin}#/bai-viet/${article.slug}`);
+            } else {
+                titleEl.textContent = "L'ÉCLAT | Tạp Chí Trang Sức Nữ & Phối Đồ Thời Trang";
+                descEl.setAttribute('content', "Khám phá L'ÉCLAT: Cẩm nang trang sức nữ, dây chuyền đẹp, cách phối đồ tôn dáng và xu hướng Quiet Luxury mới nhất.");
+                canonEl.setAttribute('href', baseOrigin);
+            }
+        }
+
+        // 9. RENDER HERO EDITORIAL (ĐỐI XỨNG 50/50 CÂN ĐỐI)
+        function renderHero() {
+            const heroSection = document.getElementById('heroSection');
+            const heroArt = articlesData.find(a => a.featured) || articlesData[0];
+            const t = heroArt[currentLang];
+            const isSaved = wishlist.includes(heroArt.id);
+
+            heroSection.innerHTML = `
+                <div class="luxury-card rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch">
+                    <div class="lg:col-span-6 img-zoom-container relative h-[300px] sm:h-[360px] lg:h-[420px] bg-stone-900">
+                        <img 
+                            src="${heroArt.image}" 
+                            alt="${t.title}" 
+                            title="${t.title}"
+                            width="800" height="560"
+                            onerror="handleLuxuryImageError(this, '${t.title}')"
+                            class="w-full h-full object-cover object-center cursor-pointer"
+                            onclick="openArticleModal(${heroArt.id})"
+                        >
+                        <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full bg-black/75 text-gold text-[11px] font-bold uppercase tracking-widest backdrop-blur-sm">
+                                TIÊU ĐIỂM ẤN PHẨM • HAUTE JOAILLERIE
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-between lg:h-[420px]">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-stone-500 dark:text-stone-400 mb-2.5">
+                                <span class="uppercase tracking-widest font-semibold text-gold">${heroArt.atelier}</span>
+                                <span>${heroArt.hours} Giờ Chế Tác</span>
+                            </div>
+                            <h2 class="font-serif text-xl sm:text-2xl lg:text-[26px] font-bold leading-snug mb-3 cursor-pointer hover:text-gold transition-colors line-clamp-3" onclick="openArticleModal(${heroArt.id})">
+                                ${t.title}
+                            </h2>
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed line-clamp-3 mb-4">
+                                ${t.excerpt}
+                            </p>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-2 gap-3 p-3 rounded-xl bg-pearl/60 dark:bg-charcoal/70 border luxury-border mb-4 text-xs">
+                                <div>
+                                    <span class="text-stone-500 block">Chất liệu chính</span>
+                                    <span class="font-semibold line-clamp-1">${t.specs.material}</span>
+                                </div>
+                                <div>
+                                    <span class="text-stone-500 block">Định giá tham khảo</span>
+                                    <span class="font-serif font-bold text-gold text-sm">${heroArt.priceDisplay}</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button onclick="openArticleModal(${heroArt.id})" class="flex-1 py-3 px-5 rounded-full bg-gold text-white text-xs font-bold uppercase tracking-widest hover:opacity-95 transition-all">
+                                    ${uiTranslations[currentLang].readMore}
+                                </button>
+                                <button onclick="toggleWishlist(${heroArt.id}, event)" class="p-3 rounded-full border luxury-border hover:border-gold transition-colors ${isSaved ? 'bg-gold text-white' : ''}" title="Lưu vào Vault">
+                                    <svg class="w-4 h-4" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 10. RENDER DANH SÁCH BÀI VIẾT
+        function renderArticles() {
+            const grid = document.getElementById('articlesGrid');
+            let filtered = articlesData.filter(item => {
+                if (currentCategory === 'jewelry') return item.category === 'jewelry';
+                if (currentCategory === 'couture') return item.category === 'couture';
+                if (currentCategory === 'new8') return item.isNew8 === true;
+                return true;
+            });
+
+            if (currentSearch.trim() !== '') {
+                const q = currentSearch.toLowerCase();
+                filtered = filtered.filter(item =>
+                    item.vi.title.toLowerCase().includes(q) ||
+                    item.en.title.toLowerCase().includes(q) ||
+                    item.vi.excerpt.toLowerCase().includes(q) ||
+                    item.primaryKeyword.toLowerCase().includes(q)
+                );
+            }
+
+            if (currentSort === 'priceDesc') {
+                filtered.sort((a, b) => b.priceValue - a.priceValue);
+            } else if (currentSort === 'hoursDesc') {
+                filtered.sort((a, b) => b.hours - a.hours);
+            } else {
+                filtered.sort((a, b) => (b.isNew8 ? 1 : 0) - (a.isNew8 ? 1 : 0));
+            }
+
+            grid.innerHTML = filtered.map(art => {
+                const t = art[currentLang];
+                const isSaved = wishlist.includes(art.id);
+                const badgeText = art.category === 'jewelry' ? 'HAUTE JOAILLERIE' : 'HAUTE COUTURE';
+
+                return `
+                    <article class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="img-zoom-container relative h-64 bg-stone-900">
+                                <img 
+                                    src="${art.image}" 
+                                    alt="${t.title}" 
+                                    title="${t.title}"
+                                    width="600" height="450"
+                                    loading="lazy"
+                                    onerror="handleLuxuryImageError(this, '${t.title}')"
+                                    class="w-full h-full object-cover cursor-pointer"
+                                    onclick="openArticleModal(${art.id})"
+                                >
+                                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                                    <span class="px-2.5 py-1 rounded-full bg-black/75 text-gold text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                                        ${badgeText}
+                                    </span>
+                                    ${art.isNew8 ? `<span class="px-2.5 py-1 rounded-full bg-gold text-white text-[10px] font-bold uppercase tracking-wider">MỚI</span>` : ''}
+                                </div>
+                                <button onclick="toggleWishlist(${art.id}, event)" class="absolute top-3 right-3 p-2 rounded-full bg-black/60 text-white hover:bg-gold transition-colors" title="Lưu tác phẩm">
+                                    <svg class="w-4 h-4" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400 mb-2">
+                                    <span class="font-semibold text-gold uppercase tracking-wider">${art.atelier}</span>
+                                    <span>${art.hours}h thủ công</span>
+                                </div>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold leading-snug mb-2.5 cursor-pointer hover:text-gold transition-colors" onclick="openArticleModal(${art.id})">
+                                    <a href="#/bai-viet/${art.slug}" onclick="openArticleModal(${art.id}); return false;">${t.title}</a>
+                                </h3>
+                                <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 line-clamp-3 leading-relaxed mb-4">
+                                    ${t.excerpt}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-3 border-t luxury-border flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] uppercase tracking-wider text-stone-400 block">Định giá / Giá trị</span>
+                                <span class="font-serif font-bold text-gold text-sm">${art.priceDisplay}</span>
+                            </div>
+                            <button onclick="openArticleModal(${art.id})" class="text-xs font-bold uppercase tracking-wider text-gold hover:underline flex items-center gap-1">
+                                <span>${uiTranslations[currentLang].readMore}</span>
+                                <span>→</span>
+                            </button>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        // 11. RENDER LOOKBOOK PAIRING
+        function renderLookbook() {
+            const tabsEl = document.getElementById('pairingTabs');
+            const displayEl = document.getElementById('pairingDisplay');
+
+            tabsEl.innerHTML = lookbookPairings.map(p => `
+                <button onclick="selectPairing('${p.id}')" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${activePairingId === p.id ? 'bg-gold text-white' : 'bg-ivory dark:bg-obsidian border luxury-border hover:border-gold'}">
+                    ${currentLang === 'vi' ? p.nameVi : p.nameEn}
+                </button>
+            `).join('');
+
+            const activePair = lookbookPairings.find(p => p.id === activePairingId) || lookbookPairings[0];
+            const jArt = articlesData.find(a => a.id === activePair.jewelryId);
+            const cArt = articlesData.find(a => a.id === activePair.coutureId);
+
+            displayEl.innerHTML = `
+                <div class="lg:col-span-5 luxury-card rounded-xl p-4 flex items-center gap-4 cursor-pointer" onclick="openArticleModal(${jArt.id})">
+                    <img src="${jArt.image}" alt="${jArt[currentLang].title}" width="160" height="160" onerror="handleLuxuryImageError(this, '${jArt[currentLang].title}')" class="w-24 h-24 sm:w-28 sm:h-28 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gold block">TRANG SỨC ĐIỂM NHẤN</span>
+                        <h4 class="font-serif font-bold text-base leading-snug mb-1">${jArt[currentLang].title}</h4>
+                        <span class="text-xs text-gold font-semibold">${jArt.priceDisplay}</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 text-center font-serif text-2xl text-gold font-bold">+</div>
+                <div class="lg:col-span-5 luxury-card rounded-xl p-4 flex items-center gap-4 cursor-pointer" onclick="openArticleModal(${cArt.id})">
+                    <img src="${cArt.image}" alt="${cArt[currentLang].title}" width="160" height="160" onerror="handleLuxuryImageError(this, '${cArt[currentLang].title}')" class="w-24 h-24 sm:w-28 sm:h-28 rounded-lg object-cover flex-shrink-0">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gold block">TRANG PHỤC SÁNH ĐÔI</span>
+                        <h4 class="font-serif font-bold text-base leading-snug mb-1">${cArt[currentLang].title}</h4>
+                        <span class="text-xs text-gold font-semibold">${cArt.priceDisplay}</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-12 p-4 rounded-xl bg-ivory dark:bg-obsidian border luxury-border text-xs sm:text-sm leading-relaxed">
+                    <strong class="text-gold uppercase tracking-wider">Bí quyết Phối đồ Thượng lưu:</strong> ${currentLang === 'vi' ? activePair.ruleVi : activePair.ruleEn}
+                </div>
+            `;
+        }
+
+        function selectPairing(id) {
+            activePairingId = id;
+            renderLookbook();
+        }
+
+        // 12. MỞ MODAL ĐỌC BÀI VIẾT
+        function openArticleModal(id) {
+            const art = articlesData.find(a => a.id === id);
+            if (!art) return;
+
+            currentOpenArticleId = id;
+            const t = art[currentLang];
+            const modal = document.getElementById('articleModal');
+            const bodyEl = document.getElementById('modalBodyContent');
+            document.getElementById('modalCategoryBadge').textContent = art.category === 'jewelry' ? 'HAUTE JOAILLERIE' : 'HAUTE COUTURE';
+            document.getElementById('modalReadTimeBadge').textContent = currentLang === 'vi' ? '⏱ 6 phút đọc' : '⏱ 6 min read';
+
+            updateModalBookmarkState();
+
+            const mainH1 = document.getElementById('main-page-h1');
+            if (mainH1) mainH1.outerHTML = `<div id="main-page-h1" class="font-serif text-2xl sm:text-4xl font-bold tracking-tight">${mainH1.innerHTML}</div>`;
+
+            updateDynamicSEO(art);
+            window.location.hash = `/bai-viet/${art.slug}`;
+
+            bodyEl.innerHTML = `
+                <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.18em] text-gold font-semibold mb-3">
+                    <span>${art.atelier}</span>
+                    <span>•</span>
+                    <span>${art.hours} Giờ Chế Tác Thủ Công</span>
+                </div>
+
+                <h1 class="font-serif text-2xl sm:text-4xl font-bold leading-snug mb-6">${t.title}</h1>
+
+                <figure class="mb-8 rounded-2xl overflow-hidden border luxury-border bg-stone-900">
+                    <img 
+                        src="${art.image}" 
+                        alt="${t.title}" 
+                        title="${t.title}"
+                        width="1000" height="620"
+                        onerror="handleLuxuryImageError(this, '${t.title}')"
+                        class="w-full max-h-[480px] object-cover"
+                    >
+                    <figcaption class="p-3.5 text-xs text-stone-500 dark:text-stone-400 bg-pearl/50 dark:bg-charcoal flex flex-wrap justify-between gap-2">
+                        <span><strong>Tuyệt tác:</strong> ${t.specs.gemstone}</span>
+                        <span><strong>Định giá tham khảo:</strong> <strong class="text-gold">${art.priceDisplay}</strong></span>
+                    </figcaption>
+                </figure>
+
+                <div id="articleReaderText" class="reader-prose text-stone-800 dark:text-stone-200 leading-relaxed text-base">
+                    ${generateFullSeoArticleHTML(art)}
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            modal.scrollTop = 0;
+            document.body.style.overflow = 'hidden';
+
+            modal.onscroll = function() {
+                const scrollTop = modal.scrollTop;
+                const docHeight = modal.scrollHeight - modal.clientHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                document.getElementById('readingProgressBar').style.width = progress + '%';
+            };
+        }
+
+        function scrollToSection(sectionId, e) {
+            if (e) e.preventDefault();
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function handleModalBackdropClick(e) {
+            if (e.target.id === 'articleModal') {
+                closeArticleModal();
+            }
+        }
+
+        function updateModalBookmarkState() {
+            const btn = document.getElementById('modalBookmarkBtn');
+            const icon = document.getElementById('modalBookmarkIcon');
+            if (!btn || !icon || !currentOpenArticleId) return;
+            const isSaved = wishlist.includes(currentOpenArticleId);
+            btn.className = `p-2 rounded-full border luxury-border hover:border-gold transition-colors ${isSaved ? 'bg-gold text-white' : ''}`;
+            icon.setAttribute('fill', isSaved ? 'currentColor' : 'none');
+        }
+
+        function toggleWishlistFromModal() {
+            if (!currentOpenArticleId) return;
+            toggleWishlist(currentOpenArticleId);
+            updateModalBookmarkState();
+        }
+
+        function shareCurrentArticle() {
+            const shareUrl = window.location.href;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareUrl);
+            }
+            showToast("Đã sao chép liên kết bài viết vào bộ nhớ tạm!");
+        }
+
+        function closeArticleModal() {
+            const modal = document.getElementById('articleModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+            currentOpenArticleId = null;
+
+            const mainH1Placeholder = document.getElementById('main-page-h1');
+            if (mainH1Placeholder) {
+                mainH1Placeholder.outerHTML = `<h1 id="main-page-h1" class="font-serif text-2xl sm:text-4xl font-bold tracking-tight">${uiTranslations[currentLang].mainH1Title}</h1>`;
+            }
+            updateDynamicSEO(null);
+            history.replaceState(null, null, ' ');
+        }
+
+        // 13. CÁC HÀM TƯƠNG TÁC GIAO DIỆN
+        function selectCategory(cat) {
+            currentCategory = cat;
+            document.getElementById('categorySelect').value = cat;
+            renderArticles();
+        }
+
+        function handleSort(val) {
+            currentSort = val;
+            renderArticles();
+        }
+
+        function handleSearch(val) {
+            currentSearch = val;
+            document.getElementById('clearSearchBtn').classList.toggle('hidden', !val);
+            renderArticles();
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            handleSearch('');
+        }
+
+        function resetToHome(e) {
+            if (e) e.preventDefault();
+            closeArticleModal();
+            selectCategory('all');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('langViBtn').className = lang === 'vi'
+                ? 'px-2.5 py-1 rounded-full bg-gold text-white transition-all'
+                : 'px-2.5 py-1 rounded-full text-stone-600 dark:text-stone-400 hover:text-gold transition-all';
+            document.getElementById('langEnBtn').className = lang === 'en'
+                ? 'px-2.5 py-1 rounded-full bg-gold text-white transition-all'
+                : 'px-2.5 py-1 rounded-full text-stone-600 dark:text-stone-400 hover:text-gold transition-all';
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (uiTranslations[lang][key]) el.textContent = uiTranslations[lang][key];
+            });
+
+            document.getElementById('catOptAll').textContent = uiTranslations[lang].catAll;
+            document.getElementById('catOptJewelry').textContent = uiTranslations[lang].catJewelry;
+            document.getElementById('catOptCouture').textContent = uiTranslations[lang].catCouture;
+            document.getElementById('catOptNew8').textContent = uiTranslations[lang].catNew8;
+
+            renderHero();
+            renderArticles();
+            renderLookbook();
+            renderWishlist();
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            document.getElementById('sunIcon').classList.toggle('hidden', !isDark);
+            document.getElementById('moonIcon').classList.toggle('hidden', isDark);
+        }
+
+        function adjustFontSize(delta) {
+            const reader = document.getElementById('articleReaderText');
+            if (!reader) return;
+            if (delta === 0) currentFontScale = 0;
+            else currentFontScale = Math.max(-1, Math.min(2, currentFontScale + delta));
+            const sizes = ['text-sm', 'text-base', 'text-lg', 'text-xl'];
+            reader.className = `reader-prose text-stone-800 dark:text-stone-200 leading-relaxed ${sizes[currentFontScale + 1]}`;
+        }
+
+        function toggleWishlist(id, e) {
+            if (e) e.stopPropagation();
+            const idx = wishlist.indexOf(id);
+            if (idx > -1) {
+                wishlist.splice(idx, 1);
+                showToast("Đã xóa khỏi Tủ Lưu Trữ");
+            } else {
+                wishlist.push(id);
+                showToast("Đã lưu vào Tủ Lưu Trữ Cá Nhân");
+            }
+            localStorage.setItem('leclat_wishlist', JSON.stringify(wishlist));
+            document.getElementById('wishlistBadge').textContent = wishlist.length;
+            renderHero();
+            renderArticles();
+            renderWishlist();
+        }
+
+        function renderWishlist() {
+            const container = document.getElementById('wishlistContainer');
+            document.getElementById('wishlistBadge').textContent = wishlist.length;
+            if (wishlist.length === 0) {
+                container.innerHTML = `<p class="text-xs text-stone-500 py-8 text-center">Chưa có tuyệt tác nào được lưu.</p>`;
+                return;
+            }
+            container.innerHTML = wishlist.map(id => {
+                const art = articlesData.find(a => a.id === id);
+                if (!art) return '';
+                return `
+                    <div class="p-3 rounded-xl border luxury-border flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3 cursor-pointer" onclick="toggleWishlistModal(); openArticleModal(${art.id});">
+                            <img src="${art.image}" alt="${art[currentLang].title}" class="w-14 h-14 rounded-lg object-cover">
+                            <div>
+                                <h4 class="font-serif font-bold text-xs line-clamp-1">${art[currentLang].title}</h4>
+                                <span class="text-xs text-gold font-semibold">${art.priceDisplay}</span>
+                            </div>
+                        </div>
+                        <button onclick="toggleWishlist(${art.id}, event)" class="text-xs text-stone-400 hover:text-red-500">✕</button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleWishlistModal() {
+            document.getElementById('wishlistModal').classList.toggle('hidden');
+        }
+
+        function openConciergeModal() {
+            document.getElementById('conciergeModal').classList.remove('hidden');
+        }
+
+        function closeConciergeModal() {
+            document.getElementById('conciergeModal').classList.add('hidden');
+        }
+
+        function submitConcierge(e) {
+            e.preventDefault();
+            closeConciergeModal();
+            showToast("Đã gửi yêu cầu Đặt Lịch Tư Vấn Đặc Quyền thành công!");
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 3000);
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && currentOpenArticleId !== null) {
+                closeArticleModal();
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTopBtn');
+            if (btn) {
+                btn.classList.toggle('hidden', window.scrollY < 450);
+            }
+        });
+
+        // KHỞI CHẠY ỨNG DỤNG KHI TẢI TRANG
+        window.addEventListener('DOMContentLoaded', () => {
+            updateDynamicSEO(null);
+            renderHero();
+            renderArticles();
+            renderLookbook();
+            renderWishlist();
+        });
+    </script>
+</body>
+</html>
